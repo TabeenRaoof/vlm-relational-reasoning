@@ -1,6 +1,6 @@
 # Instructions for Claude Code — n=2000 Confirmatory Study
 
-You (Claude Code) are running on the user's Mac, in their `cs587-pilot` repo. This
+You (Claude Code) are running on the user's Mac, in their `vlm-relational-reasoning` repo. This
 file, plus the referenced docs, is your full brief. Read `docs/RUN_PLAN.md` and
 `preregistration/PREREGISTRATION.md` fully before doing anything.
 

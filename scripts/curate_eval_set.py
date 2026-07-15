@@ -3,7 +3,7 @@
 curate_eval_set.py
 
 Curates a stratified evaluation set from VSR (Visual Spatial Reasoning) for the
-CS587 pilot. Filters items into two categories (projective spatial, topological
+vlm-relational-reasoning pilot. Filters items into two categories (projective spatial, topological
 containment) and samples a balanced pilot set with True/False labels roughly
 50/50 within each category.
 

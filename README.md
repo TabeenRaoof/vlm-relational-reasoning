@@ -1,4 +1,4 @@
-# CS587 Pilot — VLM Relational Reasoning Evaluation
+# vlm-relational-reasoning — VLM Relational Reasoning Evaluation
 
 ## What this project produces
 
@@ -28,7 +28,7 @@ the pilot).
 
 ## Directory layout
 
-    cs587-pilot/
+    vlm-relational-reasoning/
       data/                    # VSR JSONL splits, curated CSVs, cached images
       scripts/                 # all Python scripts and the Jetson decision tree
       results/                 # per-model result CSVs (one file per model run)
@@ -45,7 +45,7 @@ the pilot).
 ### Step 0. Environment (once, at the start)
 
 ```
-cd ~/cs587-pilot
+cd ~/vlm-relational-reasoning
 source venv/bin/activate    # if venv doesn't exist yet, run:
                             # python3 -m venv venv
                             # source venv/bin/activate

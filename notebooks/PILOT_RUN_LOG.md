@@ -1,4 +1,4 @@
-# CS587 Pilot — Detailed Run Log & Analysis Notebook
+# vlm-relational-reasoning — Detailed Run Log & Analysis Notebook
 
 **Purpose.** A running, report-ready record of every step taken to produce the
 pilot data, the decisions made, the problems encountered, and what the results

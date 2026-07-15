@@ -2,7 +2,7 @@
 """
 analyze_pilot.py
 
-Analysis for the CS587 pilot. Takes the per-model result CSVs produced by
+Analysis for the vlm-relational-reasoning pilot. Takes the per-model result CSVs produced by
 run_gemini_eval.py, run_ollama_eval.py, and (Monday-morning) the Jetson
 eval script, and computes:
 

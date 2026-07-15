@@ -1,7 +1,7 @@
 # Morning Summary — Overnight Autonomous Run
 
 **Session start:** 2026-07-08 (overnight, unattended)
-**Repo:** ~/cs587-pilot · **Git:** not a git repo → commits skipped (per instructions)
+**Repo:** ~/vlm-relational-reasoning · **Git:** not a git repo → commits skipped (per instructions)
 **API key:** `GEMINI_API_KEY` present in `.env` (sourced for API steps) → Step 6 not blocked
 **Cost ceiling:** $8 hard stop on Step 6. Running tally below.
 

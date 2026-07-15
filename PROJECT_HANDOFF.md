@@ -1,4 +1,4 @@
-# CS587 Pilot — Comprehensive Handoff & Context Report
+# vlm-relational-reasoning — Comprehensive Handoff & Context Report
 
 **Purpose.** A single self-contained document to restore full context in a new
 conversation (Claude Code, Claude chat, or for you). It covers the plan, the
@@ -6,7 +6,7 @@ reasoning, every decision and pivot, all results, the exact state of the repo,
 and how to resume. If you're starting fresh, **read §1–§3 first**, then jump to
 whatever you need.
 
-**Last updated:** 2026-07-10 · **Repo:** `~/cs587-pilot` (NOT a git repo) ·
+**Last updated:** 2026-07-10 · **Repo:** `~/vlm-relational-reasoning` (NOT a git repo) ·
 **Deadline:** data-analysis report due Friday.
 
 **Companion docs (all current):**
@@ -256,7 +256,7 @@ latency_seconds, error`. (Gemini CSVs also have `caption, image_url`.)
 ## 7. How to resume — environment & commands
 
 ```bash
-cd ~/cs587-pilot
+cd ~/vlm-relational-reasoning
 source venv/bin/activate           # Python 3.14.6 (upgraded mid-project)
 set -a; source .env; set +a        # loads GEMINI_API_KEY (git-ignored)
 ```
@@ -318,7 +318,7 @@ set -a; source .env; set +a        # loads GEMINI_API_KEY (git-ignored)
 
 ## 10. One-paragraph reset (paste this to bootstrap a new chat)
 
-> CS587 VLM spatial-reasoning pilot (`~/cs587-pilot`, not a git repo). VSR
+> vlm-relational-reasoning: VLM spatial-reasoning pilot (`~/vlm-relational-reasoning`, not a git repo). VSR
 > yes/no items, two categories (projective_spatial, topological_containment),
 > compute spectrum Qwen2.5-VL-3B → 7B (Mac/Ollama) → Gemini-2.5-flash. Eval set
 > is content-hashed and nests (n50 ⊂ n150=300 items). Results (n=300): 3B 76.7%,

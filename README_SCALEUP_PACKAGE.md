@@ -2,7 +2,7 @@
 
 This package contains everything needed to run the pre-registered n=2000
 confirmatory study. **These are ADDITIVE files** — copy them into your existing
-`cs587-pilot` repo; they do not replace anything you already have. Review each,
+`vlm-relational-reasoning` repo; they do not replace anything you already have. Review each,
 then `git add` them yourself so every change is version-controlled and you
 understand it before it's public.
 
