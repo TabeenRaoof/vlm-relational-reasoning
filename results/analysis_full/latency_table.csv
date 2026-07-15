@@ -1,0 +1,11 @@
+model,category,n,median_s,mean_raw_s,mean_trimmed_s,n_outliers_gt10s
+gemini-2.5-flash,projective_spatial,150,1.15,3.4,1.31,5
+gemini-2.5-flash,topological_containment,150,1.15,5.02,1.3,9
+gemini-2.5-flash-inverted,projective_spatial,50,1.29,2.7,1.45,1
+gemini-2.5-flash-inverted,topological_containment,50,1.23,1.34,1.34,0
+gemini-2.5-flash-thinking,projective_spatial,150,2.11,3.81,2.44,5
+gemini-2.5-flash-thinking,topological_containment,150,2.06,3.15,2.27,3
+qwen2.5vl:3b,projective_spatial,150,2.34,2.35,2.35,0
+qwen2.5vl:3b,topological_containment,150,2.34,2.25,2.25,0
+qwen2.5vl:7b,projective_spatial,150,3.26,3.26,3.26,0
+qwen2.5vl:7b,topological_containment,150,3.54,6.88,3.43,1

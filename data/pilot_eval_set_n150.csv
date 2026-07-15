@@ -1,0 +1,301 @@
+item_id,category,relation,caption,ground_truth_label,image_filename,image_url,vsr_source_split
+vsr_4f766f327ec1,projective_spatial,below,The dog is below the bed.,0,000000544778.jpg,http://images.cocodataset.org/train2017/000000544778.jpg,train
+vsr_f86dcedc6bba,projective_spatial,under,The bed is under the cat.,1,000000492352.jpg,http://images.cocodataset.org/train2017/000000492352.jpg,train
+vsr_ed8962def028,projective_spatial,parallel to,The surfboard is parallel to the bus.,1,000000514864.jpg,http://images.cocodataset.org/train2017/000000514864.jpg,train
+vsr_2c41745c5011,projective_spatial,across from,The person is across from the sandwich.,1,000000540436.jpg,http://images.cocodataset.org/train2017/000000540436.jpg,test
+vsr_80c81dc97766,projective_spatial,at the left side of,The laptop is at the left side of the person.,0,000000508749.jpg,http://images.cocodataset.org/train2017/000000508749.jpg,test
+vsr_15d8070d62a9,projective_spatial,in front of,The elephant is in front of the bird.,1,000000324816.jpg,http://images.cocodataset.org/train2017/000000324816.jpg,train
+vsr_bbf6e038dc07,projective_spatial,under,The potted plant is under the cat.,0,000000563805.jpg,http://images.cocodataset.org/train2017/000000563805.jpg,train
+vsr_9efb1b33943d,projective_spatial,at the left side of,The cow is at the left side of the truck.,0,000000550356.jpg,http://images.cocodataset.org/train2017/000000550356.jpg,train
+vsr_6f63252de15f,projective_spatial,under,The bed is under the suitcase.,0,000000046168.jpg,http://images.cocodataset.org/train2017/000000046168.jpg,train
+vsr_14d5bb541327,projective_spatial,under,The handbag is under the banana.,0,000000393286.jpg,http://images.cocodataset.org/train2017/000000393286.jpg,train
+vsr_f7f6ec6a0bca,projective_spatial,at the back of,The horse is at the back of the truck.,0,000000543747.jpg,http://images.cocodataset.org/train2017/000000543747.jpg,dev
+vsr_00e12c629a5a,projective_spatial,at the right side of,The person is at the right side of the teddy bear.,0,000000498082.jpg,http://images.cocodataset.org/train2017/000000498082.jpg,train
+vsr_a80dede6fff7,projective_spatial,at the right side of,The teddy bear is at the right side of the dog.,0,000000157616.jpg,http://images.cocodataset.org/train2017/000000157616.jpg,test
+vsr_d76a1691f58e,projective_spatial,at the right side of,The train is at the right side of the cow.,0,000000132568.jpg,http://images.cocodataset.org/train2017/000000132568.jpg,train
+vsr_55454651c7da,projective_spatial,left of,The cup is left of the bowl.,0,000000204052.jpg,http://images.cocodataset.org/train2017/000000204052.jpg,train
+vsr_6dae73d2b55f,projective_spatial,on top of,The cat is on top of the suitcase.,1,000000045830.jpg,http://images.cocodataset.org/train2017/000000045830.jpg,train
+vsr_8cb582fd8e3e,projective_spatial,facing,The elephant is facing the person.,1,000000152293.jpg,http://images.cocodataset.org/train2017/000000152293.jpg,train
+vsr_1e3c2d4e57ea,projective_spatial,in front of,The dining table is in front of the person.,0,000000369404.jpg,http://images.cocodataset.org/train2017/000000369404.jpg,train
+vsr_29499d60ef9e,projective_spatial,perpendicular to,The teddy bear is perpendicular to the dining table.,1,000000189436.jpg,http://images.cocodataset.org/val2017/000000189436.jpg,train
+vsr_f01be3d25455,projective_spatial,under,The dining table is under the cake.,1,000000008043.jpg,http://images.cocodataset.org/train2017/000000008043.jpg,train
+vsr_59235557ec7e,projective_spatial,behind,The cat is behind the teddy bear.,1,000000546013.jpg,http://images.cocodataset.org/train2017/000000546013.jpg,dev
+vsr_95c91b4f6586,projective_spatial,parallel to,The dog is parallel to the cat.,0,000000273885.jpg,http://images.cocodataset.org/train2017/000000273885.jpg,train
+vsr_8d89eaea2379,projective_spatial,facing away from,The sheep is facing away from the person.,0,000000251475.jpg,http://images.cocodataset.org/train2017/000000251475.jpg,train
+vsr_2ab7f67c1890,projective_spatial,in front of,The kite is in front of the person.,1,000000099024.jpg,http://images.cocodataset.org/val2017/000000099024.jpg,train
+vsr_29733bfd1466,projective_spatial,behind,The car is behind the surfboard.,0,000000447135.jpg,http://images.cocodataset.org/train2017/000000447135.jpg,train
+vsr_cd6c75ba96e8,projective_spatial,below,The dog is below the motorcycle.,0,000000251716.jpg,http://images.cocodataset.org/train2017/000000251716.jpg,test
+vsr_19bebd17030b,projective_spatial,at the left side of,The dog is at the left side of the horse.,1,000000366811.jpg,http://images.cocodataset.org/train2017/000000366811.jpg,train
+vsr_b5137cb6cee9,projective_spatial,at the right side of,The broccoli is at the right side of the pizza.,1,000000062716.jpg,http://images.cocodataset.org/train2017/000000062716.jpg,train
+vsr_f24ecf5464d4,projective_spatial,under,The banana is under the orange.,1,000000038668.jpg,http://images.cocodataset.org/train2017/000000038668.jpg,train
+vsr_075718196fc5,projective_spatial,under,The umbrella is under the bird.,1,000000174423.jpg,http://images.cocodataset.org/train2017/000000174423.jpg,train
+vsr_a2763683d43e,projective_spatial,parallel to,The motorcycle is parallel to the airplane.,0,000000538242.jpg,http://images.cocodataset.org/train2017/000000538242.jpg,train
+vsr_68894f67bde3,projective_spatial,under,The dog is under the dining table.,1,000000353893.jpg,http://images.cocodataset.org/train2017/000000353893.jpg,dev
+vsr_3eacb2b569c5,projective_spatial,behind,The truck is behind the cow.,1,000000357860.jpg,http://images.cocodataset.org/train2017/000000357860.jpg,train
+vsr_cc6da8e77411,projective_spatial,on top of,The person is on top of the elephant.,1,000000511204.jpg,http://images.cocodataset.org/train2017/000000511204.jpg,train
+vsr_d455a5c6f1b4,projective_spatial,below,The cat is below the person.,0,000000190760.jpg,http://images.cocodataset.org/train2017/000000190760.jpg,train
+vsr_e63d0bcc4025,projective_spatial,behind,The refrigerator is behind the person.,0,000000570515.jpg,http://images.cocodataset.org/train2017/000000570515.jpg,train
+vsr_bcd6de4b2765,projective_spatial,under,The laptop is under the cat.,1,000000398767.jpg,http://images.cocodataset.org/train2017/000000398767.jpg,train
+vsr_1e406802b166,projective_spatial,over,The chair is over the dog.,0,000000431440.jpg,http://images.cocodataset.org/train2017/000000431440.jpg,train
+vsr_87fb9e837b78,projective_spatial,behind,The bench is behind the teddy bear.,0,000000395531.jpg,http://images.cocodataset.org/train2017/000000395531.jpg,test
+vsr_72336c818aee,projective_spatial,behind,The couch is behind the banana.,0,000000481313.jpg,http://images.cocodataset.org/train2017/000000481313.jpg,test
+vsr_0c82ea760497,projective_spatial,in front of,The motorcycle is in front of the dog.,0,000000378163.jpg,http://images.cocodataset.org/train2017/000000378163.jpg,train
+vsr_936b5cecb6de,projective_spatial,at the right side of,The cat is at the right side of the bed.,0,000000082418.jpg,http://images.cocodataset.org/train2017/000000082418.jpg,train
+vsr_54a6a93a1864,projective_spatial,under,The apple is under the cake.,1,000000577405.jpg,http://images.cocodataset.org/train2017/000000577405.jpg,test
+vsr_20a99b9df471,projective_spatial,under,The book is under the banana.,0,000000415222.jpg,http://images.cocodataset.org/train2017/000000415222.jpg,train
+vsr_bc33c65b6e19,projective_spatial,on top of,The keyboard is on top of the cat.,0,000000386361.jpg,http://images.cocodataset.org/train2017/000000386361.jpg,test
+vsr_cade277a5808,projective_spatial,parallel to,The bus is parallel to the surfboard.,0,000000394535.jpg,http://images.cocodataset.org/train2017/000000394535.jpg,train
+vsr_720f96868300,projective_spatial,above,The umbrella is above the bird.,1,000000322905.jpg,http://images.cocodataset.org/train2017/000000322905.jpg,train
+vsr_46d72b0b7d90,projective_spatial,at the right side of,The dining table is at the right side of the person.,0,000000362966.jpg,http://images.cocodataset.org/train2017/000000362966.jpg,test
+vsr_d36905500b87,projective_spatial,over,The bench is over the cat.,1,000000387295.jpg,http://images.cocodataset.org/train2017/000000387295.jpg,train
+vsr_30b7f213bcac,projective_spatial,at the left side of,The teddy bear is at the left side of the dog.,0,000000088241.jpg,http://images.cocodataset.org/train2017/000000088241.jpg,train
+vsr_4c277639dc0c,projective_spatial,behind,The bus is behind the parking meter.,0,000000146881.jpg,http://images.cocodataset.org/train2017/000000146881.jpg,train
+vsr_f8b7dd35f192,projective_spatial,right of,The couch is right of the potted plant.,1,000000049037.jpg,http://images.cocodataset.org/train2017/000000049037.jpg,train
+vsr_354f550a4743,projective_spatial,behind,The cup is behind the cake.,1,000000337949.jpg,http://images.cocodataset.org/train2017/000000337949.jpg,train
+vsr_8d52c8ba3606,projective_spatial,beneath,The dining table is beneath the person.,1,000000158726.jpg,http://images.cocodataset.org/train2017/000000158726.jpg,train
+vsr_3d3fce2b10f0,projective_spatial,perpendicular to,The train is perpendicular to the bus.,0,000000409009.jpg,http://images.cocodataset.org/train2017/000000409009.jpg,test
+vsr_58dba9d9338b,projective_spatial,at the left side of,The person is at the left side of the bed.,1,000000207090.jpg,http://images.cocodataset.org/train2017/000000207090.jpg,train
+vsr_2c20eac6befd,projective_spatial,below,The person is below the hair drier.,1,000000563615.jpg,http://images.cocodataset.org/train2017/000000563615.jpg,train
+vsr_aae41bbb1ae6,projective_spatial,above,The bicycle is above the cat.,1,000000201348.jpg,http://images.cocodataset.org/train2017/000000201348.jpg,train
+vsr_1832ed064dc9,projective_spatial,parallel to,The motorcycle is parallel to the car.,1,000000310553.jpg,http://images.cocodataset.org/train2017/000000310553.jpg,train
+vsr_29d4d75273be,projective_spatial,in front of,The person is in front of the sheep.,0,000000016109.jpg,http://images.cocodataset.org/train2017/000000016109.jpg,train
+vsr_64b411ad3ab4,projective_spatial,at the back of,The parking meter is at the back of the truck.,1,000000019185.jpg,http://images.cocodataset.org/train2017/000000019185.jpg,test
+vsr_aec0b0ea07c5,projective_spatial,above,The keyboard is above the dining table.,1,000000259745.jpg,http://images.cocodataset.org/train2017/000000259745.jpg,train
+vsr_6bb5c52ad459,projective_spatial,left of,The oven is left of the cake.,0,000000271759.jpg,http://images.cocodataset.org/train2017/000000271759.jpg,train
+vsr_448b2b067d0a,projective_spatial,under,The suitcase is under the laptop.,0,000000238717.jpg,http://images.cocodataset.org/train2017/000000238717.jpg,train
+vsr_7cecc0998206,projective_spatial,ahead of,The motorcycle is ahead of the car.,1,000000557016.jpg,http://images.cocodataset.org/train2017/000000557016.jpg,train
+vsr_fb7e7adae7ed,projective_spatial,left of,The bed is left of the tv.,1,000000076816.jpg,http://images.cocodataset.org/train2017/000000076816.jpg,dev
+vsr_dea20464e99a,projective_spatial,below,The keyboard is below the apple.,1,000000203673.jpg,http://images.cocodataset.org/train2017/000000203673.jpg,test
+vsr_5b5ab5579a0f,projective_spatial,at the left side of,The teddy bear is at the left side of the dog.,1,000000139355.jpg,http://images.cocodataset.org/train2017/000000139355.jpg,test
+vsr_7b90ed4c3c9a,projective_spatial,in front of,The laptop is in front of the dog.,1,000000134112.jpg,http://images.cocodataset.org/val2017/000000134112.jpg,train
+vsr_b24d5d69526b,projective_spatial,on top of,The train is on top of the cake.,1,000000022429.jpg,http://images.cocodataset.org/train2017/000000022429.jpg,test
+vsr_37741ca34462,projective_spatial,ahead of,The motorcycle is ahead of the train.,0,000000187286.jpg,http://images.cocodataset.org/train2017/000000187286.jpg,train
+vsr_172f117f63ee,projective_spatial,above,The pizza is above the dining table.,1,000000356153.jpg,http://images.cocodataset.org/train2017/000000356153.jpg,train
+vsr_6dfb24ac782c,projective_spatial,behind,The bicycle is behind the bench.,1,000000370493.jpg,http://images.cocodataset.org/train2017/000000370493.jpg,dev
+vsr_790d040ba14d,projective_spatial,left of,The elephant is left of the car.,0,000000116675.jpg,http://images.cocodataset.org/train2017/000000116675.jpg,train
+vsr_eb3d26c5a393,projective_spatial,above,The cat is above the wine glass.,1,000000236234.jpg,http://images.cocodataset.org/train2017/000000236234.jpg,dev
+vsr_dcf947c79df6,projective_spatial,in front of,The book is in front of the train.,1,000000342675.jpg,http://images.cocodataset.org/train2017/000000342675.jpg,train
+vsr_8390eb309f25,projective_spatial,on top of,The cat is on top of the suitcase.,0,000000086229.jpg,http://images.cocodataset.org/train2017/000000086229.jpg,train
+vsr_daf8202c2a8f,projective_spatial,left of,The broccoli is left of the pizza.,0,000000563444.jpg,http://images.cocodataset.org/train2017/000000563444.jpg,train
+vsr_64e8659dc1ca,projective_spatial,below,The cat is below the toilet.,0,000000431060.jpg,http://images.cocodataset.org/train2017/000000431060.jpg,train
+vsr_73ca048769e7,projective_spatial,behind,The person is behind the laptop.,0,000000060472.jpg,http://images.cocodataset.org/train2017/000000060472.jpg,train
+vsr_dc2eb7bdce92,projective_spatial,on top of,The cake is on top of the banana.,0,000000029994.jpg,http://images.cocodataset.org/train2017/000000029994.jpg,train
+vsr_523080de8c75,projective_spatial,above,The kite is above the person.,1,000000134211.jpg,http://images.cocodataset.org/train2017/000000134211.jpg,train
+vsr_c16557e6064e,projective_spatial,in front of,The car is in front of the cake.,0,000000045188.jpg,http://images.cocodataset.org/train2017/000000045188.jpg,train
+vsr_c9e83f7b6ba3,projective_spatial,at the right side of,The zebra is at the right side of the car.,0,000000429491.jpg,http://images.cocodataset.org/train2017/000000429491.jpg,train
+vsr_5c46f12a6556,projective_spatial,on top of,The cat is on top of the cake.,0,000000185384.jpg,http://images.cocodataset.org/train2017/000000185384.jpg,train
+vsr_2d67cec357bb,projective_spatial,on top of,The dog is on top of the bench.,1,000000240653.jpg,http://images.cocodataset.org/train2017/000000240653.jpg,train
+vsr_1665bfb34566,projective_spatial,on top of,The cat is on top of the suitcase.,0,000000333368.jpg,http://images.cocodataset.org/train2017/000000333368.jpg,train
+vsr_95aa598199f5,projective_spatial,in front of,The person is in front of the suitcase.,0,000000403813.jpg,http://images.cocodataset.org/train2017/000000403813.jpg,train
+vsr_d4f88f36bcde,projective_spatial,below,The keyboard is below the apple.,0,000000081485.jpg,http://images.cocodataset.org/train2017/000000081485.jpg,train
+vsr_fcaaff25ec0d,projective_spatial,facing,The refrigerator is facing the pizza.,0,000000328270.jpg,http://images.cocodataset.org/train2017/000000328270.jpg,train
+vsr_77c92cd6b47a,projective_spatial,at the right side of,The bed is at the right side of the surfboard.,1,000000016458.jpg,http://images.cocodataset.org/train2017/000000016458.jpg,test
+vsr_176d66230541,projective_spatial,behind,The fire hydrant is behind the bicycle.,1,000000185545.jpg,http://images.cocodataset.org/train2017/000000185545.jpg,train
+vsr_5a9d50f53478,projective_spatial,on top of,The cup is on top of the teddy bear.,0,000000188053.jpg,http://images.cocodataset.org/train2017/000000188053.jpg,train
+vsr_63ec56ffc648,projective_spatial,above,The hot dog is above the dining table.,1,000000229362.jpg,http://images.cocodataset.org/train2017/000000229362.jpg,train
+vsr_64f2a707f9a8,projective_spatial,below,The umbrella is below the cat.,1,000000001139.jpg,http://images.cocodataset.org/train2017/000000001139.jpg,train
+vsr_16541fff623c,projective_spatial,facing,The bear is facing the teddy bear.,0,000000073197.jpg,http://images.cocodataset.org/train2017/000000073197.jpg,dev
+vsr_f76f6de1392e,projective_spatial,behind,The bicycle is behind the teddy bear.,1,000000305923.jpg,http://images.cocodataset.org/train2017/000000305923.jpg,train
+vsr_34322092756c,projective_spatial,at the right side of,The person is at the right side of the refrigerator.,1,000000347884.jpg,http://images.cocodataset.org/train2017/000000347884.jpg,train
+vsr_d03fcb670f10,projective_spatial,at the back of,The teddy bear is at the back of the motorcycle.,0,000000050321.jpg,http://images.cocodataset.org/train2017/000000050321.jpg,train
+vsr_f20be046ba15,projective_spatial,left of,The boat is left of the potted plant.,1,000000112363.jpg,http://images.cocodataset.org/train2017/000000112363.jpg,test
+vsr_c7851274a7f4,projective_spatial,behind,The mouse is behind the teddy bear.,0,000000569024.jpg,http://images.cocodataset.org/train2017/000000569024.jpg,train
+vsr_8389a06cdec2,projective_spatial,above,The pizza is above the bench.,1,000000363581.jpg,http://images.cocodataset.org/train2017/000000363581.jpg,train
+vsr_c87e512a7e6f,projective_spatial,under,The bench is under the giraffe.,0,000000548174.jpg,http://images.cocodataset.org/train2017/000000548174.jpg,train
+vsr_823315081480,projective_spatial,in front of,The dog is in front of the potted plant.,0,000000570968.jpg,http://images.cocodataset.org/train2017/000000570968.jpg,train
+vsr_dfe0a4baf0eb,projective_spatial,under,The dog is under the dining table.,1,000000034824.jpg,http://images.cocodataset.org/train2017/000000034824.jpg,train
+vsr_2294f152a59e,projective_spatial,left of,The cup is left of the hot dog.,0,000000145722.jpg,http://images.cocodataset.org/train2017/000000145722.jpg,train
+vsr_d388b8cb9273,projective_spatial,on top of,The suitcase is on top of the bed.,0,000000254984.jpg,http://images.cocodataset.org/train2017/000000254984.jpg,dev
+vsr_6c15cbeb265c,projective_spatial,in front of,The keyboard is in front of the teddy bear.,0,000000148977.jpg,http://images.cocodataset.org/train2017/000000148977.jpg,train
+vsr_a48457d54aeb,projective_spatial,under,The couch is under the cat.,1,000000015497.jpg,http://images.cocodataset.org/val2017/000000015497.jpg,test
+vsr_7a8532fc978f,projective_spatial,under,The keyboard is under the apple.,1,000000203673.jpg,http://images.cocodataset.org/train2017/000000203673.jpg,train
+vsr_092a6d3e1a89,projective_spatial,under,The refrigerator is under the tv.,1,000000397148.jpg,http://images.cocodataset.org/train2017/000000397148.jpg,train
+vsr_530286dae1db,projective_spatial,beneath,The bench is beneath the person.,1,000000075187.jpg,http://images.cocodataset.org/train2017/000000075187.jpg,dev
+vsr_c6cf14f8938c,projective_spatial,at the right side of,The person is at the right side of the dining table.,1,000000529234.jpg,http://images.cocodataset.org/train2017/000000529234.jpg,test
+vsr_f585af4b4974,projective_spatial,in front of,The person is in front of the bed.,0,000000578545.jpg,http://images.cocodataset.org/val2017/000000578545.jpg,train
+vsr_27779499d5a5,projective_spatial,beneath,The banana is beneath the sandwich.,1,000000537382.jpg,http://images.cocodataset.org/train2017/000000537382.jpg,test
+vsr_6b3087eb0c2f,projective_spatial,at the right side of,The oven is at the right side of the person.,0,000000506641.jpg,http://images.cocodataset.org/train2017/000000506641.jpg,dev
+vsr_0c1b0cc6480d,projective_spatial,on top of,The cat is on top of the tv.,0,000000181739.jpg,http://images.cocodataset.org/train2017/000000181739.jpg,train
+vsr_edfde1233916,projective_spatial,left of,The dining table is left of the person.,0,000000124723.jpg,http://images.cocodataset.org/train2017/000000124723.jpg,train
+vsr_e872dab45ff9,projective_spatial,at the right side of,The train is at the right side of the potted plant.,0,000000518546.jpg,http://images.cocodataset.org/train2017/000000518546.jpg,train
+vsr_b698e2c54ad1,projective_spatial,over,The umbrella is over the keyboard.,0,000000025193.jpg,http://images.cocodataset.org/train2017/000000025193.jpg,train
+vsr_b498cbb6616b,projective_spatial,behind,The sink is behind the person.,0,000000329242.jpg,http://images.cocodataset.org/train2017/000000329242.jpg,train
+vsr_a7b64eae3a6b,projective_spatial,behind,The umbrella is behind the motorcycle.,1,000000091636.jpg,http://images.cocodataset.org/train2017/000000091636.jpg,test
+vsr_50a471666610,projective_spatial,parallel to,The motorcycle is parallel to the bus.,0,000000032533.jpg,http://images.cocodataset.org/train2017/000000032533.jpg,dev
+vsr_f69d4cb9053e,projective_spatial,in front of,The cup is in front of the couch.,0,000000516265.jpg,http://images.cocodataset.org/train2017/000000516265.jpg,train
+vsr_00829cd23117,projective_spatial,at the left side of,The dining table is at the left side of the person.,1,000000156213.jpg,http://images.cocodataset.org/train2017/000000156213.jpg,train
+vsr_3569796e310e,projective_spatial,behind,The cat is behind the wine glass.,0,000000236234.jpg,http://images.cocodataset.org/train2017/000000236234.jpg,train
+vsr_187baf73eabb,projective_spatial,beneath,The dining table is beneath the cup.,1,000000496826.jpg,http://images.cocodataset.org/train2017/000000496826.jpg,dev
+vsr_d96014f3e99c,projective_spatial,facing away from,The person is facing away from the giraffe.,1,000000315018.jpg,http://images.cocodataset.org/train2017/000000315018.jpg,train
+vsr_354b46558074,projective_spatial,behind,The tv is behind the airplane.,1,000000179968.jpg,http://images.cocodataset.org/train2017/000000179968.jpg,dev
+vsr_1db3838bb93c,projective_spatial,at the right side of,The cat is at the right side of the oven.,0,000000484734.jpg,http://images.cocodataset.org/train2017/000000484734.jpg,train
+vsr_eb43a18e3052,projective_spatial,below,The cat is below the donut.,1,000000127556.jpg,http://images.cocodataset.org/train2017/000000127556.jpg,train
+vsr_bd7a6cf36967,projective_spatial,beneath,The bed is beneath the person.,1,000000448837.jpg,http://images.cocodataset.org/train2017/000000448837.jpg,train
+vsr_b92e41813f3f,projective_spatial,behind,The person is behind the elephant.,1,000000294087.jpg,http://images.cocodataset.org/train2017/000000294087.jpg,train
+vsr_41c42faa0feb,projective_spatial,at the right side of,The chair is at the right side of the dog.,0,000000082807.jpg,http://images.cocodataset.org/val2017/000000082807.jpg,train
+vsr_49ca1323607a,projective_spatial,at the right side of,The book is at the right side of the teddy bear.,1,000000503996.jpg,http://images.cocodataset.org/train2017/000000503996.jpg,test
+vsr_6e1d7d608fb2,projective_spatial,parallel to,The hot dog is parallel to the bus.,1,000000188723.jpg,http://images.cocodataset.org/train2017/000000188723.jpg,train
+vsr_375400a9b239,projective_spatial,left of,The hair drier is left of the person.,1,000000375483.jpg,http://images.cocodataset.org/train2017/000000375483.jpg,test
+vsr_4cb37e12223a,projective_spatial,beneath,The oven is beneath the pizza.,1,000000052664.jpg,http://images.cocodataset.org/train2017/000000052664.jpg,train
+vsr_75c03d55b1f0,projective_spatial,at the right side of,The cup is at the right side of the donut.,0,000000067373.jpg,http://images.cocodataset.org/train2017/000000067373.jpg,train
+vsr_25dcafd591d5,projective_spatial,on top of,The person is on top of the couch.,1,000000180593.jpg,http://images.cocodataset.org/train2017/000000180593.jpg,train
+vsr_a03acf1711c2,projective_spatial,at the right side of,The banana is at the right side of the broccoli.,1,000000060269.jpg,http://images.cocodataset.org/train2017/000000060269.jpg,train
+vsr_6bcd0971558a,projective_spatial,behind,The dining table is behind the suitcase.,1,000000485083.jpg,http://images.cocodataset.org/train2017/000000485083.jpg,train
+vsr_c9230780713a,projective_spatial,above,The pizza is above the dog.,1,000000508555.jpg,http://images.cocodataset.org/train2017/000000508555.jpg,dev
+vsr_a76d91e16ab8,projective_spatial,facing away from,The laptop is facing away from the chair.,1,000000131011.jpg,http://images.cocodataset.org/train2017/000000131011.jpg,test
+vsr_8aec6bdfa3aa,projective_spatial,parallel to,The book is parallel to the bed.,0,000000364725.jpg,http://images.cocodataset.org/train2017/000000364725.jpg,test
+vsr_caa108a48297,projective_spatial,beneath,The oven is beneath the cake.,0,000000276582.jpg,http://images.cocodataset.org/train2017/000000276582.jpg,train
+vsr_1dc8f7eaf7ae,projective_spatial,at the right side of,The chair is at the right side of the pizza.,0,000000285484.jpg,http://images.cocodataset.org/train2017/000000285484.jpg,train
+vsr_bbfa46ea6c98,projective_spatial,below,The dining table is below the hot dog.,1,000000238498.jpg,http://images.cocodataset.org/train2017/000000238498.jpg,test
+vsr_689187d22e69,projective_spatial,beneath,The keyboard is beneath the cake.,0,000000070211.jpg,http://images.cocodataset.org/train2017/000000070211.jpg,train
+vsr_647a07a45d2a,projective_spatial,at the left side of,The dining table is at the left side of the dog.,0,000000207889.jpg,http://images.cocodataset.org/train2017/000000207889.jpg,dev
+vsr_a794fb31bc11,topological_containment,part of,The bicycle is part of the train.,0,000000479495.jpg,http://images.cocodataset.org/train2017/000000479495.jpg,train
+vsr_fd5bf101753c,topological_containment,inside,The bicycle is inside the train.,0,000000357549.jpg,http://images.cocodataset.org/train2017/000000357549.jpg,train
+vsr_2bbecb77171c,topological_containment,consists of,The sandwich consists of the donut.,0,000000244317.jpg,http://images.cocodataset.org/train2017/000000244317.jpg,train
+vsr_196ee48d2f53,topological_containment,consists of,The cake consists of the banana.,1,000000093031.jpg,http://images.cocodataset.org/train2017/000000093031.jpg,train
+vsr_e50198a783ca,topological_containment,inside,The laptop is inside the train.,0,000000253004.jpg,http://images.cocodataset.org/train2017/000000253004.jpg,train
+vsr_4cded7b80f8c,topological_containment,inside,The donut is inside the bowl.,1,000000521601.jpg,http://images.cocodataset.org/val2017/000000521601.jpg,train
+vsr_fbdf133eeecb,topological_containment,into,The person is into the refrigerator.,1,000000381908.jpg,http://images.cocodataset.org/train2017/000000381908.jpg,train
+vsr_ea6af9c64b6b,topological_containment,contains,The cup contains the cat.,0,000000296188.jpg,http://images.cocodataset.org/train2017/000000296188.jpg,test
+vsr_901a2d16e09f,topological_containment,at the edge of,The laptop is at the edge of the dining table.,1,000000318355.jpg,http://images.cocodataset.org/train2017/000000318355.jpg,dev
+vsr_b1a8762f4f9f,topological_containment,contains,The refrigerator contains the sandwich.,1,000000110886.jpg,http://images.cocodataset.org/train2017/000000110886.jpg,train
+vsr_6f518ee0156b,topological_containment,at the edge of,The cake is at the edge of the oven.,1,000000092346.jpg,http://images.cocodataset.org/train2017/000000092346.jpg,train
+vsr_516a11bcd21c,topological_containment,in,The cat is in the backpack.,1,000000477673.jpg,http://images.cocodataset.org/train2017/000000477673.jpg,test
+vsr_c07bbbc248ca,topological_containment,at the edge of,The teddy bear is at the edge of the cake.,1,000000446958.jpg,http://images.cocodataset.org/train2017/000000446958.jpg,train
+vsr_f2adacfb2c92,topological_containment,contains,The suitcase contains the cat.,0,000000273607.jpg,http://images.cocodataset.org/train2017/000000273607.jpg,train
+vsr_984ceb30397a,topological_containment,inside,The pizza is inside the oven.,1,000000329730.jpg,http://images.cocodataset.org/train2017/000000329730.jpg,train
+vsr_3b7314c49d17,topological_containment,consists of,The cake consists of the teddy bear.,0,000000560604.jpg,http://images.cocodataset.org/train2017/000000560604.jpg,train
+vsr_3b36cdf3d30b,topological_containment,contains,The suitcase contains the book.,1,000000473433.jpg,http://images.cocodataset.org/train2017/000000473433.jpg,train
+vsr_66220f0f52dc,topological_containment,at the edge of,The teddy bear is at the edge of the bench.,1,000000298985.jpg,http://images.cocodataset.org/train2017/000000298985.jpg,train
+vsr_faa16662428b,topological_containment,has as a part,The cake has as a part the laptop.,1,000000087813.jpg,http://images.cocodataset.org/train2017/000000087813.jpg,dev
+vsr_994b3d8ef82b,topological_containment,at the edge of,The laptop is at the edge of the dining table.,0,000000294920.jpg,http://images.cocodataset.org/train2017/000000294920.jpg,train
+vsr_fb96ad7709bf,topological_containment,into,The hot dog is into the person.,1,000000345665.jpg,http://images.cocodataset.org/train2017/000000345665.jpg,train
+vsr_c6b4f35ec00b,topological_containment,contains,The sink contains the cat.,1,000000516636.jpg,http://images.cocodataset.org/train2017/000000516636.jpg,train
+vsr_d20e954c57b6,topological_containment,inside,The dog is inside the bus.,0,000000445500.jpg,http://images.cocodataset.org/train2017/000000445500.jpg,test
+vsr_18506d296e50,topological_containment,in,The cat is in the umbrella.,0,000000490689.jpg,http://images.cocodataset.org/train2017/000000490689.jpg,train
+vsr_6ffce470c5ed,topological_containment,surrounding,The umbrella is surrounding the cat.,0,000000430567.jpg,http://images.cocodataset.org/train2017/000000430567.jpg,test
+vsr_71daf5a2ed5c,topological_containment,in the middle of,The hot dog is in the middle of the dining table.,0,000000534887.jpg,http://images.cocodataset.org/train2017/000000534887.jpg,train
+vsr_507822a25c24,topological_containment,inside,The bird is inside the car.,1,000000117445.jpg,http://images.cocodataset.org/train2017/000000117445.jpg,train
+vsr_8fae33188837,topological_containment,in the middle of,The dog is in the middle of the chair.,1,000000499225.jpg,http://images.cocodataset.org/train2017/000000499225.jpg,train
+vsr_cd6334b34e3e,topological_containment,in the middle of,The dog is in the middle of the bus.,0,000000369476.jpg,http://images.cocodataset.org/train2017/000000369476.jpg,dev
+vsr_0b0b9dd6ed9e,topological_containment,in,The cake is in the oven.,0,000000328838.jpg,http://images.cocodataset.org/train2017/000000328838.jpg,train
+vsr_92221ec681a2,topological_containment,contains,The airplane contains the chair.,1,000000567076.jpg,http://images.cocodataset.org/train2017/000000567076.jpg,dev
+vsr_41dabe8b4e0b,topological_containment,contains,The sink contains the cat.,0,000000367515.jpg,http://images.cocodataset.org/train2017/000000367515.jpg,train
+vsr_a65921d2c09b,topological_containment,contains,The suitcase contains the teddy bear.,1,000000020632.jpg,http://images.cocodataset.org/train2017/000000020632.jpg,train
+vsr_bd3cd148b798,topological_containment,in,The cat is in the sink.,0,000000550394.jpg,http://images.cocodataset.org/train2017/000000550394.jpg,test
+vsr_f592bb16a0fd,topological_containment,part of,The cat is part of the cake.,1,000000490117.jpg,http://images.cocodataset.org/train2017/000000490117.jpg,dev
+vsr_9bd6c3a26b51,topological_containment,inside,The cat is inside the handbag.,1,000000028273.jpg,http://images.cocodataset.org/train2017/000000028273.jpg,train
+vsr_c4222cbdc8ec,topological_containment,contains,The train contains the chair.,1,000000281660.jpg,http://images.cocodataset.org/train2017/000000281660.jpg,test
+vsr_eb5c75e63a26,topological_containment,contains,The train contains the chair.,0,000000012681.jpg,http://images.cocodataset.org/train2017/000000012681.jpg,test
+vsr_7ad1be895667,topological_containment,inside,The cat is inside the suitcase.,0,000000574000.jpg,http://images.cocodataset.org/train2017/000000574000.jpg,test
+vsr_f07c1b7e60b2,topological_containment,contains,The truck contains the elephant.,0,000000116675.jpg,http://images.cocodataset.org/train2017/000000116675.jpg,test
+vsr_1df6f56c945e,topological_containment,contains,The boat contains the dog.,1,000000532575.jpg,http://images.cocodataset.org/val2017/000000532575.jpg,train
+vsr_4f4cf6809cbe,topological_containment,contains,The oven contains the pizza.,0,000000575128.jpg,http://images.cocodataset.org/train2017/000000575128.jpg,train
+vsr_7b29c06e3531,topological_containment,inside,The truck is inside the dog.,0,000000168317.jpg,http://images.cocodataset.org/train2017/000000168317.jpg,test
+vsr_e727127782e0,topological_containment,at the edge of,The cat is at the edge of the truck.,0,000000482561.jpg,http://images.cocodataset.org/train2017/000000482561.jpg,train
+vsr_be98518a9cb7,topological_containment,consists of,The cake consists of the dog.,1,000000287427.jpg,http://images.cocodataset.org/train2017/000000287427.jpg,test
+vsr_400362dd9fbf,topological_containment,contains,The oven contains the cake.,0,000000299326.jpg,http://images.cocodataset.org/train2017/000000299326.jpg,test
+vsr_7172e980fb8f,topological_containment,part of,The teddy bear is part of the cake.,1,000000198429.jpg,http://images.cocodataset.org/train2017/000000198429.jpg,dev
+vsr_b81f1280b35c,topological_containment,part of,The car is part of the cake.,0,000000399675.jpg,http://images.cocodataset.org/train2017/000000399675.jpg,train
+vsr_7e1f5f7afb02,topological_containment,within,The dining table is within the boat.,0,000000554518.jpg,http://images.cocodataset.org/train2017/000000554518.jpg,test
+vsr_d54e031c8a19,topological_containment,has as a part,The apple has as a part the clock.,1,000000053573.jpg,http://images.cocodataset.org/train2017/000000053573.jpg,train
+vsr_b2ffafeb3f3f,topological_containment,at the edge of,The cat is at the edge of the dining table.,1,000000405864.jpg,http://images.cocodataset.org/train2017/000000405864.jpg,train
+vsr_9c80a84b137b,topological_containment,at the edge of,The cat is at the edge of the bench.,1,000000110155.jpg,http://images.cocodataset.org/train2017/000000110155.jpg,train
+vsr_b739b04a389a,topological_containment,surrounding,The person is surrounding the cat.,1,000000447741.jpg,http://images.cocodataset.org/train2017/000000447741.jpg,train
+vsr_30e2bb5da563,topological_containment,at the edge of,The person is at the edge of the bench.,0,000000362090.jpg,http://images.cocodataset.org/train2017/000000362090.jpg,train
+vsr_1544bcad320c,topological_containment,at the edge of,The dog is at the edge of the bed.,1,000000258159.jpg,http://images.cocodataset.org/train2017/000000258159.jpg,dev
+vsr_d65ffd34c28d,topological_containment,contains,The oven contains the pizza.,0,000000494785.jpg,http://images.cocodataset.org/train2017/000000494785.jpg,train
+vsr_2cd9cbdd9d3c,topological_containment,part of,The cake is part of the sheep.,1,000000363793.jpg,http://images.cocodataset.org/train2017/000000363793.jpg,test
+vsr_69ccab9e938f,topological_containment,contains,The truck contains the cow.,1,000000114907.jpg,http://images.cocodataset.org/val2017/000000114907.jpg,train
+vsr_a66c79b05b79,topological_containment,has as a part,The cake has as a part the train.,1,000000018873.jpg,http://images.cocodataset.org/train2017/000000018873.jpg,train
+vsr_187a1f98fbc7,topological_containment,in,The cat is in the suitcase.,1,000000064423.jpg,http://images.cocodataset.org/train2017/000000064423.jpg,test
+vsr_d271a61a9dbf,topological_containment,inside,The pizza is inside the oven.,1,000000278962.jpg,http://images.cocodataset.org/train2017/000000278962.jpg,train
+vsr_2763629b87b8,topological_containment,contains,The refrigerator contains the cat.,0,000000561393.jpg,http://images.cocodataset.org/train2017/000000561393.jpg,train
+vsr_328860016dc0,topological_containment,in,The cake is in the microwave.,0,000000192808.jpg,http://images.cocodataset.org/train2017/000000192808.jpg,dev
+vsr_bb00d64169b2,topological_containment,at the edge of,The sandwich is at the edge of the dining table.,0,000000411083.jpg,http://images.cocodataset.org/train2017/000000411083.jpg,train
+vsr_82aa19e65ed0,topological_containment,at the edge of,The suitcase is at the edge of the bed.,0,000000202186.jpg,http://images.cocodataset.org/train2017/000000202186.jpg,train
+vsr_5b8e82ba9163,topological_containment,inside,The dog is inside the suitcase.,1,000000375140.jpg,http://images.cocodataset.org/train2017/000000375140.jpg,train
+vsr_aee1022514a3,topological_containment,contains,The bowl contains the cat.,1,000000071792.jpg,http://images.cocodataset.org/train2017/000000071792.jpg,train
+vsr_6572130a3e84,topological_containment,inside,The hot dog is inside the person.,1,000000378922.jpg,http://images.cocodataset.org/train2017/000000378922.jpg,train
+vsr_bcc47269a8a8,topological_containment,contains,The toilet contains the cat.,0,000000465591.jpg,http://images.cocodataset.org/train2017/000000465591.jpg,train
+vsr_b3be54b95909,topological_containment,inside,The book is inside the suitcase.,0,000000541725.jpg,http://images.cocodataset.org/train2017/000000541725.jpg,train
+vsr_ea0f270d3324,topological_containment,inside,The person is inside the refrigerator.,0,000000032674.jpg,http://images.cocodataset.org/train2017/000000032674.jpg,train
+vsr_f6af63b191e3,topological_containment,in the middle of,The sandwich is in the middle of the bowl.,0,000000012698.jpg,http://images.cocodataset.org/train2017/000000012698.jpg,dev
+vsr_50ba30b793c6,topological_containment,contains,The suitcase contains the person.,1,000000087642.jpg,http://images.cocodataset.org/train2017/000000087642.jpg,train
+vsr_aad516f84eb6,topological_containment,contains,The oven contains the pizza.,0,000000047935.jpg,http://images.cocodataset.org/train2017/000000047935.jpg,dev
+vsr_3ccc17ceaedd,topological_containment,at the edge of,The cat is at the edge of the couch.,0,000000457791.jpg,http://images.cocodataset.org/train2017/000000457791.jpg,train
+vsr_ba5beda7da10,topological_containment,inside,The refrigerator is inside the truck.,0,000000039502.jpg,http://images.cocodataset.org/train2017/000000039502.jpg,train
+vsr_c926a3486f1c,topological_containment,enclosed by,The cake is enclosed by the oven.,1,000000276582.jpg,http://images.cocodataset.org/train2017/000000276582.jpg,train
+vsr_2bb9c9455e0b,topological_containment,in,The motorcycle is in the book.,1,000000154721.jpg,http://images.cocodataset.org/train2017/000000154721.jpg,train
+vsr_1ac3adde0f77,topological_containment,contains,The truck contains the person.,1,000000132789.jpg,http://images.cocodataset.org/train2017/000000132789.jpg,train
+vsr_34aafa485e0f,topological_containment,within,The cat is within the backpack.,1,000000318723.jpg,http://images.cocodataset.org/train2017/000000318723.jpg,test
+vsr_e526655002ec,topological_containment,inside,The cat is inside the suitcase.,0,000000475108.jpg,http://images.cocodataset.org/train2017/000000475108.jpg,train
+vsr_e500fc4459af,topological_containment,at the edge of,The sandwich is at the edge of the bowl.,0,000000109568.jpg,http://images.cocodataset.org/train2017/000000109568.jpg,train
+vsr_c7da882ea3be,topological_containment,in,The sandwich is in the bowl.,1,000000109568.jpg,http://images.cocodataset.org/train2017/000000109568.jpg,test
+vsr_b2f3fef8665f,topological_containment,part of,The couch is part of the car.,1,000000133667.jpg,http://images.cocodataset.org/train2017/000000133667.jpg,train
+vsr_3b1ba4bf23ca,topological_containment,in the middle of,The elephant is in the middle of the truck.,1,000000326593.jpg,http://images.cocodataset.org/train2017/000000326593.jpg,test
+vsr_069e7e488200,topological_containment,consists of,The car consists of the bed.,0,000000335913.jpg,http://images.cocodataset.org/train2017/000000335913.jpg,train
+vsr_2c60ec21d7ea,topological_containment,at the edge of,The laptop is at the edge of the dining table.,1,000000450704.jpg,http://images.cocodataset.org/train2017/000000450704.jpg,train
+vsr_0a1b7161f7ba,topological_containment,at the edge of,The sandwich is at the edge of the dining table.,1,000000268715.jpg,http://images.cocodataset.org/train2017/000000268715.jpg,train
+vsr_1b0ff08f10ac,topological_containment,at the edge of,The cat is at the edge of the couch.,0,000000236945.jpg,http://images.cocodataset.org/train2017/000000236945.jpg,train
+vsr_d492f99ef588,topological_containment,in,The carrot is in the bowl.,1,000000080367.jpg,http://images.cocodataset.org/train2017/000000080367.jpg,train
+vsr_755290b0e0f5,topological_containment,part of,The bear is part of the book.,0,000000107571.jpg,http://images.cocodataset.org/train2017/000000107571.jpg,train
+vsr_07f043badb3b,topological_containment,inside,The bird is inside the dog.,0,000000055532.jpg,http://images.cocodataset.org/train2017/000000055532.jpg,train
+vsr_622c9e16bacb,topological_containment,in the middle of,The pizza is in the middle of the bench.,1,000000053183.jpg,http://images.cocodataset.org/train2017/000000053183.jpg,train
+vsr_005f5bd1b502,topological_containment,surrounding,The bowl is surrounding the apple.,1,000000253890.jpg,http://images.cocodataset.org/train2017/000000253890.jpg,train
+vsr_22a0e5846e87,topological_containment,in,The toilet is in the train.,0,000000391774.jpg,http://images.cocodataset.org/train2017/000000391774.jpg,test
+vsr_87965cbee482,topological_containment,outside,The cat is outside the toilet.,1,000000225713.jpg,http://images.cocodataset.org/train2017/000000225713.jpg,train
+vsr_9578f013f3d4,topological_containment,inside,The dog is inside the sink.,1,000000365139.jpg,http://images.cocodataset.org/train2017/000000365139.jpg,dev
+vsr_6f98c04a3fd4,topological_containment,inside,The surfboard is inside the truck.,1,000000197775.jpg,http://images.cocodataset.org/train2017/000000197775.jpg,dev
+vsr_ecaae972bc48,topological_containment,inside,The sandwich is inside the refrigerator.,1,000000110886.jpg,http://images.cocodataset.org/train2017/000000110886.jpg,train
+vsr_b6e0f63a7a44,topological_containment,inside,The cow is inside the truck.,1,000000189559.jpg,http://images.cocodataset.org/train2017/000000189559.jpg,train
+vsr_31189ad7687f,topological_containment,surrounding,The sink is surrounding the cat.,1,000000185773.jpg,http://images.cocodataset.org/train2017/000000185773.jpg,train
+vsr_4c4f924c68a4,topological_containment,inside,The bird is inside the cup.,1,000000142941.jpg,http://images.cocodataset.org/train2017/000000142941.jpg,train
+vsr_a3ebdcf906c4,topological_containment,at the edge of,The dog is at the edge of the couch.,1,000000073906.jpg,http://images.cocodataset.org/train2017/000000073906.jpg,train
+vsr_184eca332a5e,topological_containment,in,The dog is in the chair.,0,000000369521.jpg,http://images.cocodataset.org/train2017/000000369521.jpg,dev
+vsr_9e235adce556,topological_containment,inside,The dog is inside the sink.,0,000000316008.jpg,http://images.cocodataset.org/train2017/000000316008.jpg,train
+vsr_f70b0449ba7b,topological_containment,contains,The bowl contains the orange.,0,000000030674.jpg,http://images.cocodataset.org/train2017/000000030674.jpg,train
+vsr_a53541c645a4,topological_containment,inside,The tv is inside the truck.,0,000000410123.jpg,http://images.cocodataset.org/train2017/000000410123.jpg,train
+vsr_95f1684e9a71,topological_containment,inside,The pizza is inside the oven.,1,000000014353.jpg,http://images.cocodataset.org/train2017/000000014353.jpg,train
+vsr_affb188cd05a,topological_containment,part of,The couch is part of the car.,0,000000348913.jpg,http://images.cocodataset.org/train2017/000000348913.jpg,train
+vsr_24d149fb2826,topological_containment,contains,The car contains the dog.,0,000000374922.jpg,http://images.cocodataset.org/train2017/000000374922.jpg,test
+vsr_a6e3b5a9872c,topological_containment,in,The bird is in the tv.,0,000000028134.jpg,http://images.cocodataset.org/train2017/000000028134.jpg,train
+vsr_4ceb3625b429,topological_containment,inside,The pizza is inside the person.,0,000000281176.jpg,http://images.cocodataset.org/train2017/000000281176.jpg,train
+vsr_93895e8ca957,topological_containment,in,The cat is in the suitcase.,0,000000501498.jpg,http://images.cocodataset.org/train2017/000000501498.jpg,train
+vsr_6e1e0720404b,topological_containment,inside,The person is inside the tv.,0,000000109937.jpg,http://images.cocodataset.org/train2017/000000109937.jpg,train
+vsr_31ed5c2b67b3,topological_containment,in,The dog is in the motorcycle.,1,000000015558.jpg,http://images.cocodataset.org/train2017/000000015558.jpg,train
+vsr_74a7d2bb2dfd,topological_containment,in,The cat is in the suitcase.,0,000000502604.jpg,http://images.cocodataset.org/train2017/000000502604.jpg,train
+vsr_ad08af57d85b,topological_containment,in,The cat is in the sink.,1,000000402590.jpg,http://images.cocodataset.org/train2017/000000402590.jpg,train
+vsr_4197f22c1aaa,topological_containment,inside,The cat is inside the refrigerator.,0,000000296471.jpg,http://images.cocodataset.org/train2017/000000296471.jpg,train
+vsr_17f735b5d49a,topological_containment,contains,The suitcase contains the cat.,1,000000566743.jpg,http://images.cocodataset.org/train2017/000000566743.jpg,train
+vsr_1afaabf69432,topological_containment,inside,The pizza is inside the oven.,0,000000047935.jpg,http://images.cocodataset.org/train2017/000000047935.jpg,test
+vsr_94759c965ead,topological_containment,has as a part,The car has as a part the bed.,1,000000477061.jpg,http://images.cocodataset.org/train2017/000000477061.jpg,test
+vsr_18ff59446c3b,topological_containment,into,The pizza is into the person.,0,000000035975.jpg,http://images.cocodataset.org/train2017/000000035975.jpg,train
+vsr_8c6f0df6b87a,topological_containment,part of,The cake is part of the sandwich.,1,000000493386.jpg,http://images.cocodataset.org/train2017/000000493386.jpg,train
+vsr_8311313e1e61,topological_containment,in the middle of,The dog is in the middle of the bed.,0,000000136373.jpg,http://images.cocodataset.org/train2017/000000136373.jpg,train
+vsr_05e69dc0e871,topological_containment,at the edge of,The cake is at the edge of the laptop.,1,000000561326.jpg,http://images.cocodataset.org/train2017/000000561326.jpg,train
+vsr_f946742729d1,topological_containment,surrounding,The handbag is surrounding the cat.,0,000000401287.jpg,http://images.cocodataset.org/train2017/000000401287.jpg,train
+vsr_f7afbc44d484,topological_containment,inside,The dog is inside the truck.,1,000000504516.jpg,http://images.cocodataset.org/train2017/000000504516.jpg,train
+vsr_04616385ce35,topological_containment,contains,The truck contains the refrigerator.,0,000000436707.jpg,http://images.cocodataset.org/train2017/000000436707.jpg,dev
+vsr_fadfc0f85c60,topological_containment,contains,The car contains the dog.,0,000000498286.jpg,http://images.cocodataset.org/val2017/000000498286.jpg,train
+vsr_9e86ab35053d,topological_containment,at the edge of,The pizza is at the edge of the dining table.,0,000000020485.jpg,http://images.cocodataset.org/train2017/000000020485.jpg,dev
+vsr_152c3d258734,topological_containment,contains,The sandwich contains the banana.,0,000000029994.jpg,http://images.cocodataset.org/train2017/000000029994.jpg,test
+vsr_a6fa0f85f17c,topological_containment,at the edge of,The sandwich is at the edge of the bowl.,1,000000570518.jpg,http://images.cocodataset.org/train2017/000000570518.jpg,test
+vsr_b78b7c34c783,topological_containment,contains,The truck contains the orange.,0,000000110324.jpg,http://images.cocodataset.org/train2017/000000110324.jpg,train
+vsr_e8de49f3c5db,topological_containment,in,The elephant is in the truck.,1,000000252459.jpg,http://images.cocodataset.org/train2017/000000252459.jpg,train
+vsr_a5a6c3b7439c,topological_containment,enclosed by,The cat is enclosed by the umbrella.,1,000000305338.jpg,http://images.cocodataset.org/train2017/000000305338.jpg,train
+vsr_29e7a8a895f9,topological_containment,at the edge of,The dog is at the edge of the bed.,1,000000545428.jpg,http://images.cocodataset.org/train2017/000000545428.jpg,test
+vsr_066d0600d3e4,topological_containment,at the edge of,The laptop is at the edge of the bench.,0,000000147375.jpg,http://images.cocodataset.org/train2017/000000147375.jpg,train
+vsr_ce0f2459ca7f,topological_containment,inside,The cat is inside the suitcase.,0,000000389474.jpg,http://images.cocodataset.org/train2017/000000389474.jpg,train
+vsr_3a70da71659d,topological_containment,inside,The cat is inside the bicycle.,1,000000275219.jpg,http://images.cocodataset.org/train2017/000000275219.jpg,train
+vsr_5e38272f5802,topological_containment,in,The cat is in the suitcase.,1,000000443303.jpg,http://images.cocodataset.org/val2017/000000443303.jpg,test
+vsr_bb0301b00285,topological_containment,in,The cat is in the suitcase.,0,000000193578.jpg,http://images.cocodataset.org/train2017/000000193578.jpg,dev
+vsr_5d4991d8d679,topological_containment,part of,The teddy bear is part of the handbag.,0,000000020632.jpg,http://images.cocodataset.org/train2017/000000020632.jpg,dev
+vsr_46e6cecdcbb8,topological_containment,at the edge of,The potted plant is at the edge of the dining table.,1,000000138367.jpg,http://images.cocodataset.org/train2017/000000138367.jpg,test
+vsr_a9431a112ad2,topological_containment,contains,The train contains the bicycle.,0,000000492937.jpg,http://images.cocodataset.org/val2017/000000492937.jpg,test
+vsr_69fd15e623d6,topological_containment,in,The hot dog is in the bowl.,1,000000428299.jpg,http://images.cocodataset.org/train2017/000000428299.jpg,test
+vsr_757cd5ed8243,topological_containment,contains,The oven contains the pizza.,1,000000171330.jpg,http://images.cocodataset.org/train2017/000000171330.jpg,train
+vsr_93e78f116b37,topological_containment,inside,The bird is inside the cat.,0,000000124926.jpg,http://images.cocodataset.org/train2017/000000124926.jpg,train
+vsr_50390b35cd3d,topological_containment,has as a part,The cake has as a part the person.,0,000000449279.jpg,http://images.cocodataset.org/train2017/000000449279.jpg,train
+vsr_515d4744ccf1,topological_containment,in,The sandwich is in the bowl.,0,000000498537.jpg,http://images.cocodataset.org/train2017/000000498537.jpg,dev
+vsr_51e2db7a8e4d,topological_containment,part of,The horse is part of the bus.,0,000000013943.jpg,http://images.cocodataset.org/train2017/000000013943.jpg,test

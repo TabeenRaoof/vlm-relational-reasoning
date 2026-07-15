@@ -1,0 +1,16 @@
+model,category,hits,n_signal,false_alarms,n_noise,HRc,FAc,dprime,c,se_dprime,dprime_ci_lo,dprime_ci_hi,c_ci_lo,c_ci_hi
+gemini-2.5-flash,ALL (pooled),105,150,10,150,0.6987,0.0695,2.0,0.479,0.189,1.629,2.37,0.294,0.665
+gemini-2.5-flash,projective_spatial,48,75,7,75,0.6382,0.0987,1.643,0.468,0.247,1.158,2.127,0.225,0.71
+gemini-2.5-flash,topological_containment,57,75,3,75,0.7566,0.0461,2.38,0.495,0.296,1.799,2.961,0.204,0.785
+gemini-2.5-flash-inverted,ALL (pooled),42,50,8,50,0.8333,0.1667,1.935,-0.0,0.298,1.35,2.52,-0.292,0.292
+gemini-2.5-flash-inverted,projective_spatial,22,25,5,25,0.8654,0.2115,1.906,-0.152,0.423,1.077,2.735,-0.566,0.263
+gemini-2.5-flash-inverted,topological_containment,20,25,3,25,0.7885,0.1346,1.906,0.152,0.423,1.077,2.735,-0.263,0.566
+gemini-2.5-flash-thinking,ALL (pooled),108,150,15,150,0.7185,0.1026,1.845,0.344,0.176,1.5,2.19,0.171,0.517
+gemini-2.5-flash-thinking,projective_spatial,56,75,11,75,0.7434,0.1513,1.685,0.188,0.236,1.222,2.147,-0.043,0.42
+gemini-2.5-flash-thinking,topological_containment,52,75,4,75,0.6908,0.0592,2.06,0.532,0.276,1.518,2.601,0.261,0.803
+qwen2.5vl:3b,ALL (pooled),97,150,17,150,0.6457,0.1159,1.569,0.411,0.17,1.236,1.903,0.244,0.578
+qwen2.5vl:3b,projective_spatial,42,75,11,75,0.5592,0.1513,1.18,0.441,0.229,0.732,1.628,0.217,0.665
+qwen2.5vl:3b,topological_containment,55,75,6,75,0.7303,0.0855,1.982,0.378,0.258,1.476,2.489,0.124,0.631
+qwen2.5vl:7b,ALL (pooled),109,150,12,150,0.7252,0.0828,1.985,0.394,0.184,1.625,2.345,0.214,0.574
+qwen2.5vl:7b,projective_spatial,53,75,5,75,0.7039,0.0724,1.994,0.461,0.265,1.474,2.514,0.201,0.721
+qwen2.5vl:7b,topological_containment,56,75,7,75,0.7434,0.0987,1.943,0.318,0.253,1.448,2.438,0.07,0.565

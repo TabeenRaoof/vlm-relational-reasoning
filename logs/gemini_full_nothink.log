@@ -1,0 +1,41 @@
+Loaded 300 items from data/pilot_eval_set_n150.csv
+API model: gemini-2.5-flash  |  CSV label: gemini-2.5-flash
+thinking: False  |  invert_prompt: False  |  max_output_tokens: 10
+Output: results/gemini_2_5_flash.csv
+
+Wrote run config to: results/gemini_2_5_flash.config.json
+  [10/300] correct=8/10 unparseable=0 errors=0
+  [20/300] correct=15/20 unparseable=0 errors=0
+  [30/300] correct=21/30 unparseable=0 errors=0
+  [40/300] correct=29/40 unparseable=0 errors=0
+  [50/300] correct=37/50 unparseable=0 errors=0
+  [60/300] correct=46/60 unparseable=0 errors=0
+  [70/300] correct=53/70 unparseable=0 errors=0
+  [80/300] correct=61/80 unparseable=0 errors=0
+  [90/300] correct=70/90 unparseable=0 errors=0
+  [100/300] correct=77/100 unparseable=0 errors=0
+  [110/300] correct=86/110 unparseable=0 errors=0
+  [120/300] correct=95/120 unparseable=0 errors=0
+  [130/300] correct=103/130 unparseable=0 errors=0
+  [140/300] correct=108/140 unparseable=0 errors=0
+  [150/300] correct=115/148 unparseable=1 errors=1
+  [160/300] correct=115/138 unparseable=11 errors=11
+  [170/300] correct=122/148 unparseable=11 errors=11
+  [180/300] correct=131/158 unparseable=11 errors=11
+  [190/300] correct=140/168 unparseable=11 errors=11
+  [200/300] correct=149/178 unparseable=11 errors=11
+  [210/300] correct=158/188 unparseable=11 errors=11
+  [220/300] correct=166/198 unparseable=11 errors=11
+  [230/300] correct=176/208 unparseable=11 errors=11
+  [240/300] correct=182/218 unparseable=11 errors=11
+  [250/300] correct=191/228 unparseable=11 errors=11
+  [260/300] correct=201/238 unparseable=11 errors=11
+  [270/300] correct=210/248 unparseable=11 errors=11
+  [280/300] correct=217/258 unparseable=11 errors=11
+  [290/300] correct=226/268 unparseable=11 errors=11
+  [300/300] correct=236/278 unparseable=11 errors=11
+
+Run complete: processed 300 new items.
+Accuracy on scoreable items: 236/278 (84.9%)
+Unparseable: 11, Errors: 11
+Output written to: results/gemini_2_5_flash.csv

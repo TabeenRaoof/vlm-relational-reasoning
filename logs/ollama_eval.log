@@ -1,0 +1,40 @@
+Loaded 300 items from data/pilot_eval_set_n150.csv
+Model: qwen2.5vl:7b
+Output: results/mac_qwen25vl_7b.csv
+
+  [10/300] correct=10/10 unparseable=0 errors=0 avg_latency=3.3s
+  [20/300] correct=19/20 unparseable=0 errors=0 avg_latency=3.3s
+  [30/300] correct=27/30 unparseable=0 errors=0 avg_latency=3.3s
+  [40/300] correct=35/40 unparseable=0 errors=0 avg_latency=3.3s
+  [50/300] correct=44/50 unparseable=0 errors=0 avg_latency=3.3s
+  [60/300] correct=51/60 unparseable=0 errors=0 avg_latency=3.3s
+  [70/300] correct=58/70 unparseable=0 errors=0 avg_latency=3.3s
+  [80/300] correct=66/80 unparseable=0 errors=0 avg_latency=3.3s
+  [90/300] correct=74/90 unparseable=0 errors=0 avg_latency=3.3s
+  [100/300] correct=81/100 unparseable=0 errors=0 avg_latency=3.3s
+  [110/300] correct=90/110 unparseable=0 errors=0 avg_latency=3.2s
+  [120/300] correct=100/120 unparseable=0 errors=0 avg_latency=3.2s
+  [130/300] correct=108/130 unparseable=0 errors=0 avg_latency=3.2s
+  [140/300] correct=114/140 unparseable=0 errors=0 avg_latency=3.2s
+  [150/300] correct=123/150 unparseable=0 errors=0 avg_latency=3.3s
+  [160/300] correct=132/160 unparseable=0 errors=0 avg_latency=3.3s
+  [170/300] correct=140/170 unparseable=0 errors=0 avg_latency=3.3s
+  [180/300] correct=149/180 unparseable=0 errors=0 avg_latency=3.3s
+  [190/300] correct=157/190 unparseable=0 errors=0 avg_latency=3.3s
+  [200/300] correct=166/200 unparseable=0 errors=0 avg_latency=3.3s
+  [210/300] correct=174/210 unparseable=0 errors=0 avg_latency=3.3s
+  [220/300] correct=183/220 unparseable=0 errors=0 avg_latency=3.3s
+  [230/300] correct=192/230 unparseable=0 errors=0 avg_latency=5.6s
+  [240/300] correct=198/240 unparseable=0 errors=0 avg_latency=5.5s
+  [250/300] correct=206/250 unparseable=0 errors=0 avg_latency=5.4s
+  [260/300] correct=216/260 unparseable=0 errors=0 avg_latency=5.3s
+  [270/300] correct=225/270 unparseable=0 errors=0 avg_latency=5.3s
+  [280/300] correct=231/280 unparseable=0 errors=0 avg_latency=5.2s
+  [290/300] correct=237/290 unparseable=0 errors=0 avg_latency=5.1s
+  [300/300] correct=247/300 unparseable=0 errors=0 avg_latency=5.1s
+
+Run complete: processed 300 new items.
+Accuracy on scoreable items: 247/300 (82.3%)
+Unparseable: 0, Errors: 0
+Average latency: 5.07s per item
+Output: results/mac_qwen25vl_7b.csv

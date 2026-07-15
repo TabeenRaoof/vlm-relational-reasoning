@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" font-family="sans-serif">
+<rect width="820" height="460" fill="white"/>
+<text x="327.5" y="30" text-anchor="middle" font-size="17" font-weight="bold">Accuracy by model and relation category (95% CI)</text>
+<line x1="55" y1="370.0" x2="600" y2="370.0" stroke="#ddd"/>
+<text x="47" y="374.0" text-anchor="end" font-size="11">0</text>
+<line x1="55" y1="308.0" x2="600" y2="308.0" stroke="#ddd"/>
+<text x="47" y="312.0" text-anchor="end" font-size="11">20</text>
+<line x1="55" y1="246.0" x2="600" y2="246.0" stroke="#ddd"/>
+<text x="47" y="250.0" text-anchor="end" font-size="11">40</text>
+<line x1="55" y1="184.0" x2="600" y2="184.0" stroke="#ddd"/>
+<text x="47" y="188.0" text-anchor="end" font-size="11">60</text>
+<line x1="55" y1="122.0" x2="600" y2="122.0" stroke="#ddd"/>
+<text x="47" y="126.0" text-anchor="end" font-size="11">80</text>
+<line x1="55" y1="60.0" x2="600" y2="60.0" stroke="#ddd"/>
+<text x="47" y="64.0" text-anchor="end" font-size="11">100</text>
+<text x="18" y="215.0" text-anchor="middle" font-size="12" transform="rotate(-90 18 215.0)">Accuracy (%)</text>
+<text x="191.25" y="400" text-anchor="middle" font-size="12">projective_spatial</text>
+<rect x="82.25" y="115.80000000000001" width="49.050000000000004" height="254.2" fill="#4C78A8"/>
+<line x1="106.775" y1="134.71" x2="106.775" y2="96.89000000000004" stroke="#333"/>
+<text x="106.775" y="111.80000000000001" text-anchor="middle" font-size="10">82</text>
+<rect x="136.75" y="130.37" width="49.050000000000004" height="239.63" fill="#F58518"/>
+<line x1="161.275" y1="151.14000000000001" x2="161.275" y2="109.60000000000002" stroke="#333"/>
+<text x="161.275" y="126.37" text-anchor="middle" font-size="10">77</text>
+<rect x="191.25" y="122.0" width="49.050000000000004" height="248.0" fill="#54A24B"/>
+<line x1="215.775" y1="141.84" x2="215.775" y2="102.15999999999997" stroke="#333"/>
+<text x="215.775" y="118.0" text-anchor="middle" font-size="10">80</text>
+<rect x="245.75" y="109.60000000000002" width="49.050000000000004" height="260.4" fill="#B279A2"/>
+<line x1="270.275" y1="141.22" x2="270.275" y2="77.97999999999996" stroke="#333"/>
+<text x="270.275" y="105.60000000000002" text-anchor="middle" font-size="10">84</text>
+<text x="463.75" y="400" text-anchor="middle" font-size="12">topological_containment</text>
+<rect x="354.75" y="113.63" width="49.050000000000004" height="256.37" fill="#4C78A8"/>
+<line x1="379.275" y1="132.54000000000002" x2="379.275" y2="95.02999999999997" stroke="#333"/>
+<text x="379.275" y="109.63" text-anchor="middle" font-size="10">83</text>
+<rect x="409.25" y="103.39999999999998" width="49.050000000000004" height="266.6" fill="#F58518"/>
+<line x1="433.775" y1="120.75999999999999" x2="433.775" y2="86.04000000000002" stroke="#333"/>
+<text x="433.775" y="99.39999999999998" text-anchor="middle" font-size="10">86</text>
+<rect x="463.75" y="115.80000000000001" width="49.050000000000004" height="254.2" fill="#54A24B"/>
+<line x1="488.275" y1="134.71" x2="488.275" y2="96.89000000000004" stroke="#333"/>
+<text x="488.275" y="111.80000000000001" text-anchor="middle" font-size="10">82</text>
+<rect x="518.25" y="109.60000000000002" width="49.050000000000004" height="260.4" fill="#B279A2"/>
+<line x1="542.775" y1="141.22" x2="542.775" y2="77.97999999999996" stroke="#333"/>
+<text x="542.775" y="105.60000000000002" text-anchor="middle" font-size="10">84</text>
+<rect x="620" y="70" width="14" height="14" fill="#4C78A8"/>
+<text x="640" y="82" font-size="11">qwen2.5vl:7b</text>
+<rect x="620" y="94" width="14" height="14" fill="#F58518"/>
+<text x="640" y="106" font-size="11">gemini-2.5-flash</text>
+<rect x="620" y="118" width="14" height="14" fill="#54A24B"/>
+<text x="640" y="130" font-size="11">gemini-2.5-flash-thinking</text>
+<rect x="620" y="142" width="14" height="14" fill="#B279A2"/>
+<text x="640" y="154" font-size="11">gemini-2.5-flash-inverted</text>
+</svg>

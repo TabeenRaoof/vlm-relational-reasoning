@@ -1,0 +1,11 @@
+model,category,n_total,n_scoreable,n_unparseable,n_correct,accuracy_pct,ci95_lo,ci95_hi
+gemini-2.5-flash,projective_spatial,150,150,0,116,77.3,70.6,84.0
+gemini-2.5-flash-inverted,projective_spatial,50,50,0,42,84.0,73.8,94.2
+gemini-2.5-flash-thinking,projective_spatial,150,150,0,120,80.0,73.6,86.4
+qwen2.5vl:3b,projective_spatial,150,150,0,106,70.7,63.4,78.0
+qwen2.5vl:7b,projective_spatial,150,150,0,123,82.0,75.9,88.1
+gemini-2.5-flash,topological_containment,150,150,0,129,86.0,80.4,91.6
+gemini-2.5-flash-inverted,topological_containment,50,50,0,42,84.0,73.8,94.2
+gemini-2.5-flash-thinking,topological_containment,150,150,0,123,82.0,75.9,88.1
+qwen2.5vl:3b,topological_containment,150,150,0,124,82.7,76.6,88.7
+qwen2.5vl:7b,topological_containment,150,150,0,124,82.7,76.6,88.7

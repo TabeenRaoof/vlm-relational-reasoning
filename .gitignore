@@ -1,0 +1,16 @@
+# Secrets — never commit. The real API key lives in .env (see .env.example).
+.env
+
+# Python virtual environment
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Cached eval images (large, re-fetchable from image_url via the eval scripts)
+data/images/

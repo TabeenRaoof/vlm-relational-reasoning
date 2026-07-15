@@ -1,0 +1,13 @@
+{
+  "written_at_utc": "2026-07-08T14:47:01.054437+00:00",
+  "api_model": "gemini-2.5-flash",
+  "csv_label": "gemini-2.5-flash",
+  "input_eval_set": "data/pilot_eval_set_n150.csv",
+  "temperature": 0.0,
+  "max_output_tokens": 10,
+  "thinking": false,
+  "thinking_budget": 0,
+  "prompt_variant": "standard",
+  "system_instruction": "You are evaluating whether a caption correctly describes a spatial relationship in an image. Answer with a single word: YES if the caption is TRUE for the image, NO if it is FALSE. Do not explain.",
+  "user_prompt_template": "Caption: {caption}\nIs this caption TRUE for the image? Answer with a single word: YES or NO."
+}

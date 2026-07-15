@@ -1,0 +1,114 @@
+model,relation,n,mean_correct,std_correct
+gemini-2.5-flash,above,9,0.778,0.441
+gemini-2.5-flash,at the back of,3,0.667,0.577
+gemini-2.5-flash,at the edge of,24,0.667,0.482
+gemini-2.5-flash,at the left side of,8,0.625,0.518
+gemini-2.5-flash,at the right side of,18,0.833,0.383
+gemini-2.5-flash,behind,19,0.789,0.419
+gemini-2.5-flash,below,10,0.6,0.516
+gemini-2.5-flash,beneath,8,0.625,0.518
+gemini-2.5-flash,consists of,5,0.8,0.447
+gemini-2.5-flash,contains,31,1.0,0.0
+gemini-2.5-flash,facing,3,1.0,0.0
+gemini-2.5-flash,facing away from,3,0.667,0.577
+gemini-2.5-flash,has as a part,5,1.0,0.0
+gemini-2.5-flash,in,21,0.857,0.359
+gemini-2.5-flash,in front of,13,0.846,0.376
+gemini-2.5-flash,in the middle of,7,0.714,0.488
+gemini-2.5-flash,inside,33,0.939,0.242
+gemini-2.5-flash,into,3,0.333,0.577
+gemini-2.5-flash,left of,9,0.778,0.441
+gemini-2.5-flash,on top of,13,1.0,0.0
+gemini-2.5-flash,over,3,1.0,0.0
+gemini-2.5-flash,parallel to,8,0.625,0.518
+gemini-2.5-flash,part of,11,0.818,0.405
+gemini-2.5-flash,surrounding,5,0.8,0.447
+gemini-2.5-flash,under,17,0.765,0.437
+gemini-2.5-flash-inverted,at the edge of,12,0.667,0.492
+gemini-2.5-flash-inverted,at the right side of,7,0.857,0.378
+gemini-2.5-flash-inverted,behind,7,1.0,0.0
+gemini-2.5-flash-inverted,below,6,0.833,0.408
+gemini-2.5-flash-inverted,beneath,3,0.667,0.577
+gemini-2.5-flash-inverted,contains,9,1.0,0.0
+gemini-2.5-flash-inverted,in,6,0.833,0.408
+gemini-2.5-flash-inverted,in front of,4,0.5,0.577
+gemini-2.5-flash-inverted,inside,9,1.0,0.0
+gemini-2.5-flash-inverted,on top of,5,0.8,0.447
+gemini-2.5-flash-inverted,parallel to,3,1.0,0.0
+gemini-2.5-flash-inverted,part of,5,1.0,0.0
+gemini-2.5-flash-inverted,under,4,1.0,0.0
+gemini-2.5-flash-thinking,above,9,0.556,0.527
+gemini-2.5-flash-thinking,at the back of,3,0.667,0.577
+gemini-2.5-flash-thinking,at the edge of,24,0.542,0.509
+gemini-2.5-flash-thinking,at the left side of,8,0.625,0.518
+gemini-2.5-flash-thinking,at the right side of,18,0.833,0.383
+gemini-2.5-flash-thinking,behind,19,0.789,0.419
+gemini-2.5-flash-thinking,below,10,1.0,0.0
+gemini-2.5-flash-thinking,beneath,8,0.75,0.463
+gemini-2.5-flash-thinking,consists of,5,0.6,0.548
+gemini-2.5-flash-thinking,contains,31,1.0,0.0
+gemini-2.5-flash-thinking,facing,3,1.0,0.0
+gemini-2.5-flash-thinking,facing away from,3,0.333,0.577
+gemini-2.5-flash-thinking,has as a part,5,1.0,0.0
+gemini-2.5-flash-thinking,in,21,0.857,0.359
+gemini-2.5-flash-thinking,in front of,13,0.846,0.376
+gemini-2.5-flash-thinking,in the middle of,7,0.429,0.535
+gemini-2.5-flash-thinking,inside,33,0.939,0.242
+gemini-2.5-flash-thinking,into,3,0.667,0.577
+gemini-2.5-flash-thinking,left of,9,0.889,0.333
+gemini-2.5-flash-thinking,on top of,13,1.0,0.0
+gemini-2.5-flash-thinking,over,3,1.0,0.0
+gemini-2.5-flash-thinking,parallel to,8,0.5,0.535
+gemini-2.5-flash-thinking,part of,11,0.818,0.405
+gemini-2.5-flash-thinking,surrounding,5,0.8,0.447
+gemini-2.5-flash-thinking,under,17,0.941,0.243
+qwen2.5vl:3b,above,9,0.556,0.527
+qwen2.5vl:3b,at the back of,3,0.667,0.577
+qwen2.5vl:3b,at the edge of,24,0.667,0.482
+qwen2.5vl:3b,at the left side of,8,0.5,0.535
+qwen2.5vl:3b,at the right side of,18,0.833,0.383
+qwen2.5vl:3b,behind,19,0.789,0.419
+qwen2.5vl:3b,below,10,0.8,0.422
+qwen2.5vl:3b,beneath,8,0.75,0.463
+qwen2.5vl:3b,consists of,5,0.6,0.548
+qwen2.5vl:3b,contains,31,0.871,0.341
+qwen2.5vl:3b,facing,3,1.0,0.0
+qwen2.5vl:3b,facing away from,3,0.0,0.0
+qwen2.5vl:3b,has as a part,5,1.0,0.0
+qwen2.5vl:3b,in,21,0.905,0.301
+qwen2.5vl:3b,in front of,13,0.692,0.48
+qwen2.5vl:3b,in the middle of,7,0.571,0.535
+qwen2.5vl:3b,inside,33,0.939,0.242
+qwen2.5vl:3b,into,3,1.0,0.0
+qwen2.5vl:3b,left of,9,0.333,0.5
+qwen2.5vl:3b,on top of,13,0.846,0.376
+qwen2.5vl:3b,over,3,0.667,0.577
+qwen2.5vl:3b,parallel to,8,0.625,0.518
+qwen2.5vl:3b,part of,11,0.818,0.405
+qwen2.5vl:3b,surrounding,5,1.0,0.0
+qwen2.5vl:3b,under,17,0.824,0.393
+qwen2.5vl:7b,above,9,0.778,0.441
+qwen2.5vl:7b,at the back of,3,0.667,0.577
+qwen2.5vl:7b,at the edge of,24,0.708,0.464
+qwen2.5vl:7b,at the left side of,8,0.5,0.535
+qwen2.5vl:7b,at the right side of,18,0.944,0.236
+qwen2.5vl:7b,behind,19,0.895,0.315
+qwen2.5vl:7b,below,10,0.7,0.483
+qwen2.5vl:7b,beneath,8,0.75,0.463
+qwen2.5vl:7b,consists of,5,0.6,0.548
+qwen2.5vl:7b,contains,31,0.935,0.25
+qwen2.5vl:7b,facing,3,0.667,0.577
+qwen2.5vl:7b,facing away from,3,0.333,0.577
+qwen2.5vl:7b,has as a part,5,1.0,0.0
+qwen2.5vl:7b,in,21,0.81,0.402
+qwen2.5vl:7b,in front of,13,0.846,0.376
+qwen2.5vl:7b,in the middle of,7,0.571,0.535
+qwen2.5vl:7b,inside,33,0.909,0.292
+qwen2.5vl:7b,into,3,1.0,0.0
+qwen2.5vl:7b,left of,9,0.778,0.441
+qwen2.5vl:7b,on top of,13,1.0,0.0
+qwen2.5vl:7b,over,3,1.0,0.0
+qwen2.5vl:7b,parallel to,8,0.875,0.354
+qwen2.5vl:7b,part of,11,0.727,0.467
+qwen2.5vl:7b,surrounding,5,0.8,0.447
+qwen2.5vl:7b,under,17,0.824,0.393

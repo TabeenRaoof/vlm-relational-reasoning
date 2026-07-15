@@ -1,0 +1,10 @@
+# Pilot dependencies. Pinned to versions installed and verified July 7, 2026.
+# Install into your venv with:
+#   pip install -r requirements.txt
+
+pandas>=2.0,<4.0
+requests>=2.31,<3.0
+google-genai>=2.0,<3.0
+ollama>=0.5,<1.0
+matplotlib>=3.9,<4.0
+scipy>=1.14,<2.0

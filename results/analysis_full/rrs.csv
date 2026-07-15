@@ -1,0 +1,3 @@
+category,model_order,accuracy_series,RRS
+projective_spatial,qwen2.5vl:3b -> qwen2.5vl:7b -> gemini-2.5-flash,"[np.float64(70.7), np.float64(82.0), np.float64(77.3)]",0.78
+topological_containment,qwen2.5vl:3b -> qwen2.5vl:7b -> gemini-2.5-flash,"[np.float64(82.7), np.float64(82.7), np.float64(86.0)]",0.835
