@@ -1,11 +1,5 @@
 # Pre-Registration: Compute-Sensitivity of Relational Reasoning in Vision-Language Models (Confirmatory Study)
 
-> **STATUS: DRAFT — must be finalized and committed to git BEFORE running
-> `curate_eval_set.py` at the new n, and BEFORE looking at any new results.**
-> The whole point of this document is that it predates the confirmatory data.
-> Fill every `<FILL>`, delete this banner, commit, record the commit hash in
-> §9, and only then collect data.
-
 ---
 
 ## 0. Relationship to Prior Exploratory Work (read first — this is what keeps it honest)
@@ -162,7 +156,11 @@ and described as exploratory/descriptive.
   - *Sustained-load hardware instability on Jetson* — mitigated by the chunked-run
     + reboot protocol (see docs/jetson_setup.md); does not affect correctness,
     only completion.
-  - `<FILL any others>`
+  - *Gemini model-version drift* — "gemini-2.5-flash" is a live, provider-managed
+    string, not a frozen artifact; if data collection spans multiple days, the
+    underlying model could change mid-study. Mitigated by completing all Gemini
+    calls within the shortest practical single window, and by logging the API's
+    version identifier per-call (if exposed) to verify no drift occurred.
 
 ---
 
@@ -191,7 +189,10 @@ and described as exploratory/descriptive.
   Report BOTH the family-wise-corrected p-values AND, for full transparency, the
   p-values under the maximally-conservative correction across all pipeline tests.
 - **Exclusions:** items that error or are unparseable on a given model are dropped
-  from that model's comparisons (report the count). No other exclusions.
+  from that model's comparisons (report the count). Items whose COCO image fails
+  to download are excluded before model runs; count and per-category failure rate
+  are reported. If failure rates differ meaningfully by category, this is noted
+  as a limitation. No other exclusions.
 - **Deviations:** any departure from this plan will be reported in a "Deviations
   from Pre-Registration" subsection, with rationale.
 
@@ -228,15 +229,64 @@ and described as exploratory/descriptive.
   implicated. No human subjects, no PII collected.
 - Compute: local hardware + Gemini API (paid). No sensitive data sent to the API
   beyond public VSR images/captions.
-- `<FILL any IRB/approval note if your institution requires one — likely N/A>`
+- No IRB review was sought for this study. This study uses only secondary,
+  publicly released benchmark data (VSR; Liu et al., 2023, TACL), built from
+  pre-existing COCO images with captions collected by the dataset's original
+  authors. No living individual was contacted, surveyed, or intervened upon by
+  this research, and no new identifiable private information was generated
+  about any individual. Under the standard definition of human-subjects
+  research (45 CFR 46 §102(e)), used here as the reference standard given the
+  institution's research-ethics framework was still developing at the time of
+  this study, this work does not meet the threshold requiring IRB review —
+  consistent with near-universal practice across ML/CV research using public
+  benchmarks (COCO, ImageNet, VSR, VQA, and similar).
 
 ---
 
 ## 9. Freeze Record (fill at commit time)
 
-- Pre-registration finalized (UTC): `<FILL>`
-- Git commit hash of THIS file at freeze: `<FILL>`
-- `check_vsr_ceiling.py` output (paste the VERDICT block): `<FILL>`
-- Confirmed target n: `<FILL>`
-- Curation command + seed used: `<FILL>`
-- (Optional but recommended) public timestamp (OSF registration URL / arXiv): `<FILL>`
+- Pre-registration finalized (UTC): `2026-07-15T06:17:10Z`
+- Git commit hash of THIS file at freeze: `6026840` (short form; recorded per
+  `RUN_PLAN.md` Step 0.3's own prescribed sequence: commit → copy hash → amend
+  to record it. Note the inherent self-reference limit this process accepts —
+  writing a hash into the file and then amending necessarily changes the
+  commit's actual hash again, so this value is one trivial metadata-only amend
+  behind the true final hash. The authoritative record is `git log --oneline`
+  on this branch: the freeze commit is titled "Freeze pre-registration for
+  n=2000 confirmatory study (pre-data)" and is the sole commit directly after
+  the "Baseline" commit — use that commit's content, not this string, as the
+  ground truth if the two ever appear to disagree.)
+- `check_vsr_ceiling.py` output (paste the VERDICT block):
+  ```
+  ====================================================================
+  PER-CATEGORY POOL SIZES (this is the ceiling)
+  ====================================================================
+
+    projective_spatial:
+      total pool: 5753
+      True label:  2960
+      False label: 2793
+      max BALANCED n for this category: 5586 (limited by the smaller label)
+
+    topological_containment:
+      total pool: 1554
+      True label:  754
+      False label: 800
+      max BALANCED n for this category: 1508 (limited by the smaller label)
+
+  ====================================================================
+  VERDICT
+  ====================================================================
+  Max balanced n-per-category (both categories): 1508
+  ==> Max achievable TOTAL n (balanced, 2 categories): 3016
+
+  [OK] Target n=2000 total (1000/category) IS achievable from VSR alone.
+       Headroom: 508 extra items/category beyond target.
+  ```
+  (Re-run from the repo root, read-only, to reproduce: `python scripts/check_vsr_ceiling.py`.)
+- Confirmed target n: 2000 (1000 projective-spatial + 1000 topological-containment)
+- Curation command + seed used:
+  `python scripts/curate_eval_set.py --n-per-category 1000 --seed 42 --output data/eval_set_n2000.csv`
+  (not yet run — this is the command Phase 1 will execute once this pre-registration
+  is frozen)
+- (Optional but recommended) public timestamp (OSF registration URL / arXiv): `<FILL — optional; not yet decided whether to register externally>`
