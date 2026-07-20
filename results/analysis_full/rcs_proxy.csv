@@ -62,6 +62,31 @@ gemini-2.5-flash-thinking,parallel to,8,0.5,0.535
 gemini-2.5-flash-thinking,part of,11,0.818,0.405
 gemini-2.5-flash-thinking,surrounding,5,0.8,0.447
 gemini-2.5-flash-thinking,under,17,0.941,0.243
+jetson-qwen2.5vl:3b-q4_K_M,above,9,0.667,0.5
+jetson-qwen2.5vl:3b-q4_K_M,at the back of,3,0.667,0.577
+jetson-qwen2.5vl:3b-q4_K_M,at the edge of,20,0.7,0.47
+jetson-qwen2.5vl:3b-q4_K_M,at the left side of,8,0.5,0.535
+jetson-qwen2.5vl:3b-q4_K_M,at the right side of,18,0.778,0.428
+jetson-qwen2.5vl:3b-q4_K_M,behind,19,0.842,0.375
+jetson-qwen2.5vl:3b-q4_K_M,below,10,0.8,0.422
+jetson-qwen2.5vl:3b-q4_K_M,beneath,8,0.75,0.463
+jetson-qwen2.5vl:3b-q4_K_M,consists of,5,0.6,0.548
+jetson-qwen2.5vl:3b-q4_K_M,contains,31,0.903,0.301
+jetson-qwen2.5vl:3b-q4_K_M,facing,3,0.667,0.577
+jetson-qwen2.5vl:3b-q4_K_M,facing away from,3,0.0,0.0
+jetson-qwen2.5vl:3b-q4_K_M,has as a part,5,1.0,0.0
+jetson-qwen2.5vl:3b-q4_K_M,in,21,0.905,0.301
+jetson-qwen2.5vl:3b-q4_K_M,in front of,13,0.769,0.439
+jetson-qwen2.5vl:3b-q4_K_M,in the middle of,7,0.571,0.535
+jetson-qwen2.5vl:3b-q4_K_M,inside,33,0.97,0.174
+jetson-qwen2.5vl:3b-q4_K_M,into,3,1.0,0.0
+jetson-qwen2.5vl:3b-q4_K_M,left of,9,0.333,0.5
+jetson-qwen2.5vl:3b-q4_K_M,on top of,13,0.846,0.376
+jetson-qwen2.5vl:3b-q4_K_M,over,3,0.667,0.577
+jetson-qwen2.5vl:3b-q4_K_M,parallel to,8,0.375,0.518
+jetson-qwen2.5vl:3b-q4_K_M,part of,11,0.818,0.405
+jetson-qwen2.5vl:3b-q4_K_M,surrounding,4,1.0,0.0
+jetson-qwen2.5vl:3b-q4_K_M,under,17,0.882,0.332
 qwen2.5vl:3b,above,9,0.556,0.527
 qwen2.5vl:3b,at the back of,3,0.667,0.577
 qwen2.5vl:3b,at the edge of,24,0.667,0.482

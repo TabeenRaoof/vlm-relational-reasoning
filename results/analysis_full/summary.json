@@ -1,6 +1,7 @@
 {
-  "n_items_total_per_model": 260,
+  "n_items_total_per_model": 266,
   "model_order_compute_axis": [
+    "jetson-qwen2.5vl:3b-q4_K_M",
     "qwen2.5vl:3b",
     "qwen2.5vl:7b",
     "gemini-2.5-flash"
@@ -38,6 +39,17 @@
       "accuracy_pct": 80.0,
       "ci95_lo": 73.6,
       "ci95_hi": 86.4
+    },
+    {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "projective_spatial",
+      "n_total": 150,
+      "n_scoreable": 150,
+      "n_unparseable": 0,
+      "n_correct": 106,
+      "accuracy_pct": 70.7,
+      "ci95_lo": 63.4,
+      "ci95_hi": 78.0
     },
     {
       "model": "qwen2.5vl:3b",
@@ -93,6 +105,17 @@
       "accuracy_pct": 82.0,
       "ci95_lo": 75.9,
       "ci95_hi": 88.1
+    },
+    {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "topological_containment",
+      "n_total": 150,
+      "n_scoreable": 145,
+      "n_unparseable": 5,
+      "n_correct": 123,
+      "accuracy_pct": 84.8,
+      "ci95_lo": 79.0,
+      "ci95_hi": 90.7
     },
     {
       "model": "qwen2.5vl:3b",
@@ -272,6 +295,57 @@
       "c_ci_hi": 0.803
     },
     {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "ALL (pooled)",
+      "hits": 102,
+      "n_signal": 146,
+      "false_alarms": 22,
+      "n_noise": 149,
+      "HRc": 0.6973,
+      "FAc": 0.15,
+      "dprime": 1.553,
+      "c": 0.26,
+      "se_dprime": 0.166,
+      "dprime_ci_lo": 1.227,
+      "dprime_ci_hi": 1.879,
+      "c_ci_lo": 0.097,
+      "c_ci_hi": 0.423
+    },
+    {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "projective_spatial",
+      "hits": 47,
+      "n_signal": 75,
+      "false_alarms": 16,
+      "n_noise": 75,
+      "HRc": 0.625,
+      "FAc": 0.2171,
+      "dprime": 1.101,
+      "c": 0.232,
+      "se_dprime": 0.219,
+      "dprime_ci_lo": 0.671,
+      "dprime_ci_hi": 1.53,
+      "c_ci_lo": 0.017,
+      "c_ci_hi": 0.446
+    },
+    {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "topological_containment",
+      "hits": 55,
+      "n_signal": 71,
+      "false_alarms": 6,
+      "n_noise": 74,
+      "HRc": 0.7708,
+      "FAc": 0.0867,
+      "dprime": 2.103,
+      "c": 0.31,
+      "se_dprime": 0.265,
+      "dprime_ci_lo": 1.585,
+      "dprime_ci_hi": 2.622,
+      "c_ci_lo": 0.051,
+      "c_ci_hi": 0.569
+    },
+    {
       "model": "qwen2.5vl:3b",
       "category": "ALL (pooled)",
       "hits": 97,
@@ -429,6 +503,24 @@
       "mean_raw_s": 3.15,
       "mean_trimmed_s": 2.27,
       "n_outliers_gt10s": 3
+    },
+    {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "projective_spatial",
+      "n": 150,
+      "median_s": 58.66,
+      "mean_raw_s": 48.26,
+      "mean_trimmed_s": 6.59,
+      "n_outliers_gt10s": 116
+    },
+    {
+      "model": "jetson-qwen2.5vl:3b-q4_K_M",
+      "category": "topological_containment",
+      "n": 150,
+      "median_s": 59.17,
+      "mean_raw_s": 41.67,
+      "mean_trimmed_s": 6.59,
+      "n_outliers_gt10s": 98
     },
     {
       "model": "qwen2.5vl:3b",

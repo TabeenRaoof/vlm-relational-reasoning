@@ -523,9 +523,12 @@ def main():
     parser.add_argument("--results-dir", type=Path, default=Path("results"))
     parser.add_argument("--output-dir", type=Path,
                         default=Path("results/analysis"))
-    parser.add_argument("--model-order", type=str, nargs="+", default=None,
-                        help="Model names ordered most-constrained -> least. "
-                             "Default: infer from data (imperfect).")
+    parser.add_argument("--model-order", type=str, default=None,
+                        help="Comma-separated model names, most-constrained -> least "
+                             "(e.g. 'jetson-qwen2.5vl:3b-q4_K_M,qwen2.5vl:3b,qwen2.5vl:7b,"
+                             "gemini-2.5-flash'). Only these models sit on the RRS/DT "
+                             "compute axis; ablation arms (inverted/thinking) are excluded. "
+                             "Default: infer from data (imperfect — see docs/PIPELINE_NOTES.md FIX 1).")
     parser.add_argument("--dt-floor", type=float, default=70.0,
                         help="Accuracy floor (%%) for Degradation Threshold")
     args = parser.parse_args()
@@ -540,7 +543,8 @@ def main():
 
     # Determine model order along compute axis
     if args.model_order:
-        model_order = args.model_order
+        model_order = [m.strip() for m in args.model_order.split(",") if m.strip()]
+        print(f"Explicit model order (most -> least constrained): {model_order}\n")
     else:
         # Best-guess ordering from names; explicit --model-order is safer.
         # For the pilot with jetson/qwen/gemini names:

@@ -1,3 +1,3 @@
 category,model_order,accuracy_series,RRS
-projective_spatial,qwen2.5vl:3b -> qwen2.5vl:7b -> gemini-2.5-flash,"[np.float64(70.7), np.float64(82.0), np.float64(77.3)]",0.78
-topological_containment,qwen2.5vl:3b -> qwen2.5vl:7b -> gemini-2.5-flash,"[np.float64(82.7), np.float64(82.7), np.float64(86.0)]",0.835
+projective_spatial,jetson-qwen2.5vl:3b-q4_K_M -> qwen2.5vl:3b -> qwen2.5vl:7b -> gemini-2.5-flash,"[np.float64(70.7), np.float64(70.7), np.float64(82.0), np.float64(77.3)]",0.756
+topological_containment,jetson-qwen2.5vl:3b-q4_K_M -> qwen2.5vl:3b -> qwen2.5vl:7b -> gemini-2.5-flash,"[np.float64(84.8), np.float64(82.7), np.float64(82.7), np.float64(86.0)]",0.836
