@@ -1,0 +1,23 @@
+======================================================================
+H3 EQUIVALENCE TEST (TOST) — Jetson vs Mac, Qwen2.5-VL-3B Q4_K_M
+======================================================================
+paired scoreable items (both sides): 1996
+discordant: b(jetson-right/mac-wrong)=46, c(jetson-wrong/mac-right)=30
+equivalence margin: ±3.0pp   alpha: 0.05
+
+observed difference (Jetson − Mac): +0.80pp
+90% CI: [+0.08, +1.52]pp
+
+TOST two one-sided tests:
+  H0: diff <= -3.0pp  ->  p = 0
+  H0: diff >= +3.0pp  ->  p = 2.357e-07
+
+RESULT: EQUIVALENCE DECLARED — the Jetson−Mac difference is
+  statistically within ±3.0pp. Accuracy transfers cleanly
+  to the edge device within the pre-registered margin.
+
+[secondary] paired McNemar (continuity-corrected) p = 0.08532
+
+[secondary] per-category difference:
+  projective_spatial       n= 996  Jetson=77.3%  Mac=76.7%  diff=+0.60pp
+  topological_containment  n=1000  Jetson=83.8%  Mac=82.8%  diff=+1.00pp

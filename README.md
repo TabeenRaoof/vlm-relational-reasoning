@@ -1,5 +1,10 @@
 # vlm-relational-reasoning — VLM Relational Reasoning Evaluation
 
+
+> **This repo contains multiple studies at different stages of completion.**
+> See [docs/STUDIES_INDEX.md](docs/STUDIES_INDEX.md) for a map of what's done,
+> what's active, and what's deferred.
+
 ## What this project produces
 
 A pilot evaluation of vision-language models on visual spatial-reasoning

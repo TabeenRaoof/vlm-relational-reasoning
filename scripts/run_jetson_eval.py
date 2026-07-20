@@ -83,6 +83,20 @@ from run_gemini_eval import parse_response, SYSTEM_INSTRUCTION, USER_PROMPT_TEMP
 
 import ollama  # noqa: E402
 
+# Items confirmed to reproducibly crash the model/projector regardless of
+# reboot state (verified across 2 soft reboots + 1 cold physical power
+# cycle, all producing the same cudaMalloc/CUDA-OOM error family on the
+# exact same items). Skipped unconditionally so they don't keep retriggering
+# the crash-and-degrade-to-slow-mode cascade in every future chunk. Their
+# existing error rows in the output CSV already correctly exclude them from
+# the paired analysis (pre-reg §6) -- this list only stops further retries.
+KNOWN_POISON_ITEM_IDS = {
+    "vsr_e76cbe6931fc",
+    "vsr_93309e3ab9fe",
+    "vsr_622d284e6fe7",
+    "vsr_1e406802b166",
+}
+
 
 def fetch_image(url: str, cache_dir: Path, filename: str,
                 timeout: int = 30) -> bytes:
@@ -178,7 +192,7 @@ def run_eval(
 
     try:
         for _, row in eval_df.iterrows():
-            if row["item_id"] in already_done:
+            if row["item_id"] in already_done or row["item_id"] in KNOWN_POISON_ITEM_IDS:
                 continue
 
             error = None

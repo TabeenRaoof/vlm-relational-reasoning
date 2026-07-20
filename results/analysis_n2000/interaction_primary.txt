@@ -1,0 +1,27 @@
+====================================================================
+PRIMARY CONFIRMATORY TEST — category × compute interaction
+====================================================================
+model_a (low compute):  qwen2.5vl:3b
+model_b (high compute): qwen2.5vl:7b
+paired items (both models, categorized): 2000
+
+Cell accuracies:
+                      mean  count
+compute cat                      
+high    containment  0.836   1000
+        projective   0.819   1000
+low     containment  0.828   1000
+        projective   0.766   1000
+
+Logistic regression: correct ~ C(compute) * C(cat)
+  interaction term C(compute)[T.low]:C(cat)[T.projective]:
+    coef = -0.2665   Wald p = 0.1025
+
+Likelihood-ratio test (full vs additive) — THE pre-registered statistic:
+  LR chi2(1) = 2.6675
+  p = 0.1024
+
+RESULT: interaction NOT significant at a=0.05.
+  -> Per pre-reg H1_0 / §7: do NOT claim category-specific
+     compute-sensitivity. Report projective degradation (RQ2) on its
+     own; state the interaction did not confirm.
