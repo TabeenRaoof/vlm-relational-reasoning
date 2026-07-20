@@ -30,10 +30,18 @@ points cost hours to discover.**
 ## 2. Connecting from the Mac (SSH)
 
 - `ssh 10.0.0.21` (user `tabeen`, host `tabeen-desktop`, Wi-Fi).
-- `~/.ssh/config` has a `BindAddress` fix for a Mac-side quirk — do not remove it.
+- **`BindAddress` in `~/.ssh/config` is NOT required.** A hardcoded local IP there
+  breaks SSH (`bind: Can't assign requested address`) whenever the controlling
+  machine's DHCP lease changes. Removing it was verified working, with no side
+  effects. If TIME_WAIT exhaustion genuinely recurs, reboot the controlling
+  machine rather than hardcoding a bind address.
 - **Mac TIME_WAIT port exhaustion:** the Mac (Chrome/VSCode) can accumulate ~24k
   TIME_WAIT sockets causing `ssh: connect ... Can't assign requested address`.
   Fix: reboot the Mac before a session that drives many Jetson requests over SSH.
+- **The Jetson's journal does not persist across reboots** (`journalctl
+  --list-boots` shows a single boot), so runtime logs from past sessions are
+  unrecoverable — capture anything needed (e.g. `dmesg`/`journalctl` evidence of
+  an OOM-kill) at collection time, before the next reboot.
 - After a Jetson `sudo reboot`, the SSH connection drops; wait ~30-60s and
   reconnect. This is a normal OS-level restart — power stays applied the whole
   time — and is **fully automatic, no physical intervention needed.** The chunked

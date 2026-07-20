@@ -1,0 +1,29 @@
+======================================================================================================================================================
+PRE-REGISTERED CONFIRMATORY TEST FAMILY (6 tests, per preregistration/PREREGISTRATION.md §3)
+Holm correction (pre-registered primary method, per §6) applied across all 6 tests jointly.
+======================================================================================================================================================
+
+#  Test                    Method                    Comparison                                   n    b    c          raw p         Holm p sig(a=.05)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+1  RQ1 interaction         Logistic regression LR    3B vs 7B, compute x category              2000             1.024153e-01   4.266008e-01         no
+2  RQ2 projective          Paired McNemar            3B vs 7B, projective                      1000   56  109   5.161425e-05   3.096855e-04        yes
+3  RQ2 containment         Paired McNemar            3B vs 7B, containment                     1000   58   66   5.295988e-01   9.409728e-01         no
+4  RQ3 edge, all           Paired McNemar            Jetson-3B-Q4 vs Mac-3B, all               1996   46   30   8.532016e-02   4.266008e-01         no
+5  RQ3 edge, projective    Paired McNemar            Jetson-3B-Q4 vs Mac-3B, projective         996   27   21   4.704864e-01   9.409728e-01         no
+6  RQ3 edge, containment   Paired McNemar            Jetson-3B-Q4 vs Mac-3B, containment       1000   19    9   8.897301e-02   4.266008e-01         no
+
+Detail — RQ1 interaction:
+  paired items (both models, categorized): 2000
+  interaction term C(compute)[T.low]:C(cat)[T.projective]: coef = -0.2665, Wald p = 0.1025
+  LR chi2(1) = 2.6675, raw p = 1.024153e-01
+
+Notes:
+  - b = model_a/first-listed correct & second-listed wrong; c = reverse discordant cell.
+    For RQ2 rows, model_a=qwen2.5vl:3b, model_b=qwen2.5vl:7b (b=3B-correct/7B-wrong).
+    For RQ3 rows, model_a=jetson-qwen2.5vl:3b-q4_K_M, model_b=qwen2.5vl:3b (b=Jetson-correct/Mac-wrong).
+  - RQ3 uses the Mac Qwen2.5-VL-3B n=2000 baseline (results/mac_qwen25vl_3b_n2000.csv),
+    matching the frozen pre-registration's RQ3 comparison arm.
+  - All tests dedup keep-last per (model_name, item_id) and restrict to items scoreable
+    (parseable, non-errored) on both sides of each pairwise comparison.
+  - Only RQ2-projective (#2) survives Holm correction at alpha=0.05.
+
