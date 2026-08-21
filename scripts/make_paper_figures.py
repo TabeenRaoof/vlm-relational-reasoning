@@ -290,10 +290,18 @@ def figure_4(args, outdir: Path):
 
 
 def save(fig, outdir: Path, stem: str):
+    """Write each figure as both PDF (for typesetting) and PNG (for preview).
+
+    CreationDate is suppressed because matplotlib otherwise stamps the current
+    time into the PDF, so re-running this script would produce byte-different
+    files with identical content — which shows up as a dirty working tree and
+    makes it look like a figure changed when nothing did.
+    """
     outdir.mkdir(parents=True, exist_ok=True)
     for extension in ("pdf", "png"):
         path = outdir / f"{stem}.{extension}"
-        fig.savefig(path, bbox_inches="tight")
+        metadata = {"CreationDate": None} if extension == "pdf" else {}
+        fig.savefig(path, bbox_inches="tight", metadata=metadata)
         print(f"  wrote {path}")
     plt.close(fig)
 
