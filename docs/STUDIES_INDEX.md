@@ -39,9 +39,10 @@ why Study 2 exists.
   `results/pilot_n300/`
 - Analysis: `scripts/analyze_pilot.py` → `results/analysis_full/`
   (accuracy, McNemar, RRS/DT, RCS-proxy, signal detection)
-- Superseded/archived pilot-scale artifacts (do not use for analysis, kept
-  for provenance): `results/archive_pilot_n100/`,
-  `results/archive_jetson_intermediate/`
+- Superseded pilot-scale artifacts (an earlier n=100 Gemini run and the
+  intermediate Jetson chunks) were removed when the repository was pruned for
+  release. They are recoverable from git history at commit `e794ad8` if ever
+  needed for provenance; nothing in the paper depends on them.
 
 ---
 
@@ -137,6 +138,6 @@ pre-registration can be written.
   (`--model-order`, multiple-comparisons correction) and real gotchas hit
   during data collection (filename/`model_name` collisions, Jetson
   duplicate rows, Gemini version drift, `.env` hygiene).
-- `PROJECT_HANDOFF.md` — environment/dependency notes (e.g. the
-  `pyexpat`/Python 3.14 `pip` issue and its fix).
+- `docs/PAPER_MAP.md` — every quantitative claim in the paper mapped to the
+  script that produces it and the output file that holds it.
 - `README.md` — top-level project overview and quickstart.

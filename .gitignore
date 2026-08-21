@@ -14,3 +14,6 @@ __MACOSX/
 
 # Cached eval images (large, re-fetchable from image_url via the eval scripts)
 data/images/
+
+# Local Claude Code settings (machine-specific, not project content)
+.claude/
