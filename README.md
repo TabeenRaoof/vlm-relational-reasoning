@@ -1,185 +1,123 @@
-# vlm-relational-reasoning — VLM Relational Reasoning Evaluation
+# Compute Scale, Relation Type, and Edge Deployment in Vision–Language Spatial Reasoning
 
+Code, frozen evaluation sets, pre-registrations, per-item results, and analysis
+for the TMLR submission of the same name.
 
-> **This repo contains multiple studies at different stages of completion.**
-> See [docs/STUDIES_INDEX.md](docs/STUDIES_INDEX.md) for a map of what's done,
-> what's active, and what's deferred.
+The paper asks what kind of spatial reasoning survives two independent axes of
+compute reduction — shrinking the model (7B → 3B) and moving inference from a
+desktop to an 8 GB edge device — using Visual Spatial Reasoning (VSR) split into
+**projective-spatial** (viewpoint-dependent: *left of*, *above*) and
+**topological-containment** (viewpoint-invariant: *inside of*, *contains*)
+relations.
 
-## What this project produces
+**Start here:** [`docs/PAPER_MAP.md`](docs/PAPER_MAP.md) maps every quantitative
+claim in the paper to the script that produces it and the file that holds it.
 
-A pilot evaluation of vision-language models on visual spatial-reasoning
-items, measured across a compute spectrum:
+## Headline results
 
-    Jetson Orin Nano (Qwen2.5-VL-3B, INT4)  ->  Mac (Qwen2.5-VL-7B)  ->  Gemini 2.5 Flash
+| | Result |
+|---|---|
+| **Projective vs containment (3B→7B)** | Projective degrades decisively (McNemar p ≈ 5.2×10⁻⁵); containment shows no detectable change (p = 0.53) |
+| **The formal interaction (H1)** | Mixed. Pre-registered test non-significant (p = 0.102); corrected for item pairing p = 0.017; on data independent of the pilot p ≈ 0.11. A power problem, not a demonstrated null. |
+| **Edge equivalence (H3)** | Equivalence declared within the pre-registered ±3 pp margin: +0.80 pp, 90% CI [0.08, 1.52], TOST p = 2.4×10⁻⁷ (in fact holds to ±2 pp) |
+| **The real edge cost** | ~21× slower in the sustained regime, 8× context reduction to load at all, 0.2% of inputs hard-fail. Not accuracy. |
+| **Quantization by scale (H2)** | Untestable as designed — Q8 will not fit in 8 GB. Reported as a finding. |
 
-Two relation categories: **projective spatial** and **topological
-containment** (see notes below on why "physical support" is excluded from
-the pilot).
+## Reproducing the paper
 
-## Pilot scope decisions (all deliberate, all disclosed in the report)
+```bash
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
 
-- **Two categories, not three.** VSR provides clean data for projective and
-  containment, but not for physical support (would require PhysBench, which
-  is video-heavy and multi-choice — not compatible with the pilot's
-  yes/no scoring pipeline). Physical support is deferred to the full paper.
-- **VSR-only.** No PhysBench in the pilot. See literature review for the
-  full 3-category taxonomy motivation.
-- **Yes/no prompting.** VSR items are already true/false. Open-ended answers
-  would introduce scoring ambiguity that a 5-day pilot can't afford.
-- **gemini-2.5-flash as ceiling.** Current default in the google-genai SDK
-  (as of July 2026). Was gemini-2.0-flash in earlier planning docs.
-- **50 items per category = 100 items total** at pilot scale. Scales cleanly
-  to 150/category (300 total) for the full paper.
+bash scripts/reproduce_paper.sh
+```
+
+This recomputes every statistic and figure in the paper from the committed
+per-item result files (~2 minutes). It does **not** re-run inference — model
+evaluation is the expensive, hardware-bound step, and its outputs are committed
+under `results/`.
+
+To re-run inference from scratch instead, fetch the images first
+(`scripts/fetch_eval_images.py`, ~1,337 COCO images by URL) and then use the
+eval harnesses (`run_ollama_eval.py`, `run_gemini_eval.py`,
+`run_jetson_eval.py`). Read [`docs/RUN_PLAN.md`](docs/RUN_PLAN.md) and
+[`docs/jetson_setup.md`](docs/jetson_setup.md) first — the Jetson run in
+particular requires a chunked, reboot-between-chunks protocol.
+
+## The three studies
+
+Full detail in [`docs/STUDIES_INDEX.md`](docs/STUDIES_INDEX.md).
+
+| # | Study | n | Pre-registered | Paper section |
+|---|---|---|---|---|
+| 1 | Exploratory pilot (hypothesis-generating) | 300 | No, by design | §5.1 |
+| 2 | Confirmatory interaction test | 2,000 | Yes (frozen at `b176ed7`) | §5.2 |
+| 3 | Edge equivalence, TOST | 2,000 | Yes (frozen at `792eb12`) | §5.3 |
+| 4 | High-powered re-test | — | **Not started** — design brief only | §8 |
+
+Both pre-registrations were frozen in version control and pushed **before any
+confirmatory data existed**. Study 4 deliberately has no data: resolving H1
+needs n ≈ 6,000–8,000, which exceeds VSR's containment ceiling (1,508 balanced
+items), so it requires a second dataset *and* a fresh pre-registration. Adding
+items under the existing pre-registration would be optional stopping.
 
 ## Directory layout
 
-    vlm-relational-reasoning/
-      data/                    # VSR JSONL splits, curated CSVs, cached images
-      scripts/                 # all Python scripts and the Jetson decision tree
-      results/                 # per-model result CSVs (one file per model run)
-        analysis/              # generated by analyze_pilot.py: tables, figures
-      logs/                    # optional; any stdout redirects go here
-      venv/                    # Python virtual environment
-      README.md                # this file
-      requirements.txt         # pinned Python dependencies
-
-## Monday morning: exact order of operations
-
-**IMPORTANT:** run these in order. Everything after step 1 depends on it.
-
-### Step 0. Environment (once, at the start)
-
 ```
-cd ~/vlm-relational-reasoning
-source venv/bin/activate    # if venv doesn't exist yet, run:
-                            # python3 -m venv venv
-                            # source venv/bin/activate
-                            # pip install -r requirements.txt
-```
+data/                        frozen evaluation sets + VSR splits (no images; see below)
+  eval_set_n2000.csv           the confirmatory item set (Studies 2 and 3)
+  pilot_eval_set_n150.csv      the n=300 pilot set — a strict subset of the above
+  vsr_*.jsonl                  source VSR splits
 
-### Step 1. Fetch VSR data (~2 min)
+preregistration/             frozen pre-registrations (do not edit; history is the point)
 
-```
-mkdir -p data
-cd data
-curl -O https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/data/splits/random/train.jsonl
-mv train.jsonl vsr_train.jsonl
-curl -O https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/data/splits/random/dev.jsonl
-mv dev.jsonl vsr_dev.jsonl
-curl -O https://raw.githubusercontent.com/cambridgeltl/visual-spatial-reasoning/master/data/splits/random/test.jsonl
-mv test.jsonl vsr_test.jsonl
-cd ..
+scripts/
+  curate_eval_set.py           builds the frozen, content-hashed, nesting item sets
+  check_vsr_ceiling.py         measures the containment ceiling that bounds the design
+  fetch_eval_images.py         downloads COCO images by URL
+  run_{ollama,gemini,jetson}_eval.py   the three eval harnesses
+  analyze_pilot.py             Study 1 + the pre-registered confirmatory test family
+  interaction_test.py          the pre-registered primary interaction test (RQ1)
+  h3_equivalence_test.py       the pre-registered TOST (RQ3)
+  h1_corrected_analyses.py     GEE, DiD, cluster bootstrap, pilot/new split (§5.2.1-2)
+  robustness_checks.py         leave-one-relation-out, TOST margins, end-to-end (§5.2-3)
+  power_projection.py          shrinkage + Monte Carlo power (§5.5)
+  latency_analysis.py          regimes and throughput (§6)
+  make_paper_figures.py        Figures 1-4
+  reproduce_paper.sh           runs all of the above in order
+
+results/
+  *_n2000.csv                  per-item results, confirmatory runs
+  pilot_n300/                  per-item results, pilot runs (isolated, see its README)
+  analysis_full/               Study 1 output
+  analysis_n2000/              Study 2 output
+  analysis_h3_n2000/           Study 3 output
+  analysis_paper/              corrected, robustness, power, latency
+  figures/                     Figures 1-4 (pdf + png)
+
+docs/                        PAPER_MAP, STUDIES_INDEX, run plans, pipeline notes,
+                             Jetson setup, and the Study 4 design brief
 ```
 
-Should end with `vsr_train.jsonl` (7,680 items), `vsr_dev.jsonl` (1,097),
-`vsr_test.jsonl` (2,195). If wc -l shows different numbers, VSR may have
-been re-versioned — flag it before continuing.
+## What is deliberately not in this repository
 
-### Step 2. Curate the pilot eval set (~30 sec)
+- **The evaluation images.** `data/eval_set_n2000.csv` carries item ids,
+  captions, labels, and image URLs; the COCO images themselves are fetched at
+  run time by `scripts/fetch_eval_images.py`. This follows VSR's license rather
+  than redistributing the image set.
+- **API keys.** `.env` is gitignored; `.env.example` documents the shape.
+- **The virtual environment**, caches, and OS cruft.
 
-```
-python scripts/curate_eval_set.py --n-per-category 50 --seed 42
-```
+## Known limitations
 
-Produces `data/pilot_eval_set_n50.csv` with 100 items (50/category,
-25 True + 25 False in each).
+Stated in full in the paper (§7, Appendix C) and not softened here: the relation
+taxonomy is single-coded with no inter-rater figure; the equivalence comparison
+is device-as-configured rather than hardware-only (context length and KV-cache
+precision differ, both forced by the 8 GB ceiling); scope is one benchmark, one
+model family, one quantization level, one device; Gemini figures are pilot-only;
+and exact Ollama/CUDA/OS package versions were not exhaustively logged.
 
-### Step 3. Run Gemini eval (~20 min including image downloads)
+## Citation
 
-```
-export GEMINI_API_KEY="your-key-here"    # from https://aistudio.google.com
-python scripts/run_gemini_eval.py \
-    --input data/pilot_eval_set_n50.csv \
-    --output results/gemini_2_5_flash.csv
-```
-
-Interruptible: rerun the same command and it resumes from where it left off.
-
-### Step 4. Set up Ollama on Mac (~5 min if not already installed)
-
-```
-# Install Ollama app: https://ollama.com/download
-ollama pull qwen2.5vl:7b
-```
-
-Model is roughly 5 GB. Ollama.app must be running.
-
-### Step 5. Run Ollama eval (~30 min, depends on M2 Max thermals)
-
-```
-python scripts/run_ollama_eval.py \
-    --input data/pilot_eval_set_n50.csv \
-    --output results/mac_qwen25vl_7b.csv
-```
-
-Also interruptible.
-
-### Step 6. Set up Jetson (see JETSON_DECISION_TREE.md)
-
-Follow `scripts/JETSON_DECISION_TREE.md`. Time-cap: 2 hours. If it fails,
-take the fallback exit and continue without the Jetson.
-
-### Step 7. Run Jetson eval
-
-If step 6 succeeded, run whichever eval script you wrote for the Jetson
-(likely a small adaptation of `run_ollama_eval.py`).
-
-### Step 8. Analyze
-
-```
-python scripts/analyze_pilot.py \
-    --results-dir results \
-    --output-dir results/analysis \
-    --model-order jetson-qwen2.5vl-3b qwen2.5vl:7b gemini-2.5-flash
-```
-
-Produces `results/analysis/`:
-  - `accuracy_table.csv` — per (model, category) with 95% CIs
-  - `rrs.csv` — Relational Robustness Score per category
-  - `dt.csv` — Degradation Threshold per category
-  - `rcs_proxy.csv` — per-relation consistency (pilot proxy for RCS)
-  - `mcnemar.csv` — pairwise McNemar tests
-  - `accuracy_by_category.png` — grouped bar chart for the report
-  - `summary.json` — machine-readable summary
-
-### Step 9. Write the 3-5 page report
-
-Follow the professor's data analysis rubric. The `analyze_pilot.py` output
-directly maps onto sections 3 (Analysis Methods), 4 (Results), and 5
-(Interpretation).
-
-## Time budget (Monday - Thursday)
-
-| Day       | Task                                                | Est. hours |
-|-----------|-----------------------------------------------------|-----------:|
-| Monday    | Steps 1-3 (Gemini) + start step 6 (Jetson setup)    |        4-6 |
-| Tuesday   | Steps 4-5 (Mac) + finish step 6 + step 7 (Jetson)   |        4-6 |
-| Wednesday | Step 8 (analysis) + start step 9 (writing)          |        4-5 |
-| Thursday  | Finish step 9 (writing) + verify                    |        3-5 |
-| Friday    | Final polish + submit                               |        1-2 |
-
-## What is deliberately NOT here
-
-- No physical support / PhysBench items (deferred to full paper)
-- No What'sUp inverse-pair items (deferred to full paper; RCS is proxy only)
-- No INT4/INT8 Jetson precision sweep (single precision this week; full
-  sweep in the follow-on)
-- No Jetson script pre-written (see JETSON_DECISION_TREE.md for why)
-
-All of these are documented as pilot-scope decisions in the report so the
-professor sees them as deliberate, not omissions.
-
-## Key contact points for defensibility
-
-Any of the choices above may be probed in supervision. The one-line
-justification for each:
-
-- "Two categories": VSR provides clean data for two; the third would need
-  a second dataset with a different item format.
-- "yes/no format": VSR is natively true/false; matches scoring integrity.
-- "gemini-2.5-flash": current default in google-genai SDK (as of July 2026);
-  strong-enough ceiling reference at negligible cost.
-- "Qwen2.5-VL family for Jetson and Mac": same architecture at different
-  sizes = clean scale-isolation.
-- "N=50 per category": adequate to detect medium-to-large effects with
-  McNemar; scales cleanly for the full paper.
+Under double-blind review at TMLR. See the submission for the authoritative
+statement of methods and results; this repository is the artifact behind it.

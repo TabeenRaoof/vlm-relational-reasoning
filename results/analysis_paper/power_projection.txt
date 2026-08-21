@@ -1,0 +1,32 @@
+======================================================================
+EFFECT-SIZE SHRINKAGE AND POWER PROJECTION  (paper Section 5.5)
+======================================================================
+Observed cell accuracies (conditioned on, not estimated):
+   high / containment  0.836
+   high / projective   0.819
+    low / containment  0.828
+    low / projective   0.766
+
+pilot interaction estimate       : 0.637 log-odds
+confirmatory interaction estimate: 0.266 log-odds
+shrinkage                        : 41.8% of the pilot value
+
+A design powered off the pilot estimate (~98% power) in fact had the
+power shown at n=2000 below. The pilot's own interaction test was not
+significant (p=0.122) — that was the signal not to trust its magnitude.
+
+----------------------------------------------------------------------
+TABLE 6 — Monte Carlo power, conditional projection
+(true effect assumed = 0.266 log-odds; 4000 replicates; alpha=0.05)
+----------------------------------------------------------------------
+         n   power
+      2000   ~36%  <- this design
+      3016   ~52%  <- VSR max balanced (containment pool is the ceiling)
+      6000   ~81%  <- adequately powered
+      8000   ~90%  <- adequately powered
+     10000   ~96%  <- adequately powered
+
+CONSEQUENCE: 80% power needs n ~ 6,000, which is more than twice VSR's
+balanced ceiling. Resolving H1 therefore REQUIRES a second dataset
+supplying containment volume, plus a fresh pre-registration — adding
+items under the existing one would be optional stopping.

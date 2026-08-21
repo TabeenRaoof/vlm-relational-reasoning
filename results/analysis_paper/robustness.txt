@@ -1,0 +1,66 @@
+======================================================================
+ROBUSTNESS CHECKS  (paper Sections 5.2, 5.3)
+======================================================================
+
+----------------------------------------------------------------------
+1. LEAVE-ONE-RELATION-OUT — projective_spatial
+----------------------------------------------------------------------
+  all 21 relations: n=1000  b=56  c=109  p = 5.161e-05
+
+  dropped relation                 n    b    c             p
+  above                          941   54  104      9.69e-05
+  across from                    977   56  106     0.0001182
+  ahead of                       993   56  109     5.161e-05
+  at the back of                 983   55  107     6.151e-05
+  at the left side of            925   52  103     5.917e-05
+  at the right side of           903   52  100     0.0001377
+  behind                         885   51  100     9.376e-05
+  below                          957   51  107     1.211e-05
+  beneath                        954   50  103     2.623e-05
+  facing                         954   52  101     0.0001042
+  facing away from               967   54  102     0.0001679
+  in front of                    866   48   95     0.0001197
+  left of                        959   55  102     0.0002414
+  on top of                      909   53  102     0.0001155
+  opposite to                    995   55  107     6.151e-05
+  over                           982   56  108     6.821e-05
+  parallel to                    980   54  102     0.0001679
+  perpendicular to               987   56  109     5.161e-05
+  right of                       981   54  109     2.341e-05
+  toward                         995   56  108     6.821e-05
+  under                          907   50   96     0.0001959
+
+  WORST p across all 21 drops: 0.0002414 (dropping 'left of')
+  -> The effect survives removal of ANY single relation. It is a
+     category-level effect, not one relation in disguise.
+
+----------------------------------------------------------------------
+2. TOST MARGIN SENSITIVITY — Jetson vs Mac (conditional on processable)
+----------------------------------------------------------------------
+  paired scoreable items: 1996   observed diff: +0.80 pp
+  90% CI: [+0.08, +1.52] pp
+
+      margin    upper-tail p     equivalence
+      ±3.0pp       2.357e-07        DECLARED
+      ±2.0pp        0.003015        DECLARED
+      ±1.5pp         0.05476    not declared
+      ±1.0pp          0.3247    not declared
+
+  -> The pre-registered ±3pp claim is not fragile: it survives tightening
+     to ±2pp. It fails below that, which bounds how strong a claim the
+     data can support.
+
+----------------------------------------------------------------------
+3. END-TO-END SENSITIVITY — device failures scored INCORRECT
+----------------------------------------------------------------------
+  items in frozen set: 2000
+  Jetson items with no scoreable result (counted wrong): 4
+
+  observed diff (Jetson − Mac): +0.70 pp
+  90% CI: [-0.03, +1.43] pp
+  TOST upper p at ±3.0pp: 9.353e-08
+
+  -> Equivalence still declared. The exclusion of failed items is not
+     doing hidden work; the conclusion is robust to the pessimistic
+     scoring. NOTE this is an accuracy statement only — the failures
+     remain a real reliability cost, reported in Section 6.

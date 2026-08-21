@@ -1,0 +1,60 @@
+======================================================================
+H1 CORRECTED / SENSITIVITY ANALYSES  (paper Sections 5.2.1, 5.2.2)
+======================================================================
+The pre-registered result (interaction_test.py) is reported first and
+is NOT superseded. What follows are corrections for (1) the paired item
+structure and (2) the inclusion of the hypothesis-generating pilot.
+
+----------------------------------------------------------------------
+POOLED — includes the 300 pilot items   items=2000  distinct images=1674
+----------------------------------------------------------------------
+  projective items=1000   containment items=1000
+
+  [pre-registered model] logistic LR, observations treated independent
+    interaction coef = +0.2665 log-odds
+    LR chi2(1) = 2.6675   p = 0.1024
+
+  [pairing-corrected] GEE, item-clustered robust SE, same estimand
+    z = 2.3881   p = 0.0169
+
+  [estimand-matched] per-item paired change score, difference-in-differences
+    DiD = +4.50 pp   95% CI [+1.18, +7.82]   p = 0.0079
+    image-level cluster bootstrap (B=10000, seed=20260716)
+      95% CI [+1.10, +7.88]   p ~ 0.0100
+
+  [per-category paired McNemar, 3B vs 7B]
+    projective_spatial       n=1000  b= 56  c=109  p = 5.161e-05
+    topological_containment  n=1000  b= 58  c= 66  p = 0.5296
+
+----------------------------------------------------------------------
+NEW ITEMS ONLY — independent of the pilot   items=1700  distinct images=1454
+----------------------------------------------------------------------
+  projective items=850   containment items=850
+
+  [pre-registered model] logistic LR, observations treated independent
+    interaction coef = +0.1955 log-odds
+    LR chi2(1) = 1.2092   p = 0.2715
+
+  [pairing-corrected] GEE, item-clustered robust SE, same estimand
+    z = 1.5916   p = 0.1115
+
+  [estimand-matched] per-item paired change score, difference-in-differences
+    DiD = +3.29 pp   95% CI [-0.31, +6.90]   p = 0.0736
+    image-level cluster bootstrap (B=10000, seed=20260716)
+      95% CI [-0.39, +6.96]   p ~ 0.0804
+
+  [per-category paired McNemar, 3B vs 7B]
+    projective_spatial       n= 850  b= 50  c= 86  p = 0.002689
+    topological_containment  n= 850  b= 51  c= 59  p = 0.5045
+
+======================================================================
+TABLE 4 — H1 interaction under four estimation choices
+======================================================================
+Sample                    DiD (pp)                  Logistic    GEE         
+Pooled (n=2000)           +4.50 [+1.18, +7.82]      p = 0.102  p = 0.017
+New only (n=1700)         +3.29 [-0.31, +6.90]      p = 0.271  p = 0.111
+
+Reading: all four agree in DIRECTION. The pairing correction flips the
+pooled conclusion to significant; neither new-items-only estimate
+crosses p<0.05. H1 is therefore reported as MIXED — a power problem at
+the revised effect size, not a demonstrated null (see power_projection.py).

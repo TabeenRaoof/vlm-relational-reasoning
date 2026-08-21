@@ -1,0 +1,38 @@
+==============================================================================
+LATENCY AND THROUGHPUT  (paper Section 6, Table 7)
+==============================================================================
+
+Raw distributions
+  Mac M2 Max (Qwen2.5-VL-3B)         n= 2000  mean=   2.79s  median=  2.90s  min=  0.22s  max=   6.38s
+  Jetson Orin Nano (all items)       n= 2027  mean=  50.84s  median= 57.46s  min=  0.01s  max= 120.11s  (18.2x Mac)
+
+Jetson regimes (split at 20s / 100s)
+  healthy regime                     n=  313  mean=   6.34s  median=  6.70s  min=  0.01s  max=  17.85s  (2.3x Mac)
+  degraded regime                    n= 1681  mean=  57.95s  median= 57.60s  min= 21.32s  max=  99.22s  (20.8x Mac)
+  per-chunk model load (not per-item) n=   33  mean= 110.99s  median=110.32s  min=104.82s  max= 120.11s
+
+  regime transition at inference row 295 (first run of 25 consecutive slow items)
+    before: n=  295  mean=  6.78s
+    after : n= 1699  mean= 57.32s (85% of inference items)
+    The device never sustainably recovered the healthy regime after
+    this point, across roughly 20 further chunks and reboots.
+
+------------------------------------------------------------------------------
+TABLE 7 — Throughput by condition
+------------------------------------------------------------------------------
+  Condition                      Latency        Throughput    vs Mac
+  Mac M2 Max                      2.79s           1292/hr        1x
+  Jetson, healthy                 6.34s            568/hr        2x
+  Jetson, degraded               57.95s             62/hr       21x
+
+NOTE ON ROUNDING: the paper's Table 7 reports the healthy regime as
+~8s / ~450 per hour, characterizing the regime by the upper end of its
+~1-8s spread rather than by its mean. The mean is printed above; both
+are marked approximate in the paper. The degraded and Mac rows are the
+computed means and match exactly.
+
+Deployment reading (paper Section 6):
+  - real-time perception (robot checking left/right before moving): ruled
+    out on throughput at these latencies, NOT on accuracy
+  - low-frequency monitoring (inspection camera, every few minutes): viable
+  - offline batch analysis (on-device review, privacy-motivated): viable
