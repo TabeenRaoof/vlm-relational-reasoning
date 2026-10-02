@@ -1,7 +1,7 @@
 # Compute Scale, Relation Type, and Edge Deployment in Vision–Language Spatial Reasoning
 
 Code, frozen evaluation sets, pre-registrations, per-item results, and analysis
-for the TMLR submission of the same name.
+for the paper of the same name.
 
 The paper asks what kind of spatial reasoning survives two independent axes of
 compute reduction — shrinking the model (7B → 3B) and moving inference from a
@@ -119,5 +119,4 @@ and exact Ollama/CUDA/OS package versions were not exhaustively logged.
 
 ## Citation
 
-Under double-blind review at TMLR. See the submission for the authoritative
-statement of methods and results; this repository is the artifact behind it.
+Tabeen Raoof. *Compute Scale, Relation Type, and Edge Deployment in Vision–Language Spatial Reasoning.* 2026. This repository is the accompanying artifact (code, data, and pre-registrations).

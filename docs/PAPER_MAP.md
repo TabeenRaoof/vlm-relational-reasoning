@@ -1,8 +1,8 @@
 # Paper → Repository Map
 
 Every quantitative claim in *Compute Scale, Relation Type, and Edge Deployment in
-Vision–Language Spatial Reasoning* (TMLR submission), mapped to the script that
-produces it and the output file that holds it.
+Vision–Language Spatial Reasoning*, mapped to the script that produces it and the
+output file that holds it.
 
 All values below were **recomputed from the committed per-item result files** and
 checked against the submitted PDF. Where a value differs from the paper by more
