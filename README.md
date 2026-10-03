@@ -119,4 +119,6 @@ and exact Ollama/CUDA/OS package versions were not exhaustively logged.
 
 ## Citation
 
-Tabeen Raoof. *Compute Scale, Relation Type, and Edge Deployment in Vision–Language Spatial Reasoning.* 2026. This repository is the accompanying artifact (code, data, and pre-registrations).
+Tabeen Raoof. *Compute Scale, Relation Type, and Edge Deployment in Vision–Language Spatial Reasoning.* Zenodo, 2026. https://doi.org/10.5281/zenodo.23117197
+
+This repository is the accompanying artifact (code, data, and pre-registrations). See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata. GitHub also exposes **Cite this repository** in the sidebar.

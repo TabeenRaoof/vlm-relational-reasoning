@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the preprint."
+type: software
+title: "Compute Scale, Relation Type, and Edge Deployment in Vision-Language Spatial Reasoning"
+authors:
+  - family-names: Raoof
+    given-names: Tabeen
+    affiliation: "San Francisco Bay University"
+url: "https://github.com/TabeenRaoof/vlm-relational-reasoning"
+repository-code: "https://github.com/TabeenRaoof/vlm-relational-reasoning"
+license: CC-BY-4.0
+date-released: 2026-10-03
+doi: 10.5281/zenodo.23117197
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Raoof
+      given-names: Tabeen
+      affiliation: "San Francisco Bay University"
+  title: "Compute Scale, Relation Type, and Edge Deployment in Vision-Language Spatial Reasoning"
+  year: 2026
+  month: 10
+  publisher: Zenodo
+  doi: 10.5281/zenodo.23117197
+  url: "https://doi.org/10.5281/zenodo.23117197"
